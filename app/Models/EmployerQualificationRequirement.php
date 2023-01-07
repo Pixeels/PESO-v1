@@ -5,13 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Applicant extends Model
+class EmployerQualificationRequirement extends Model
 {
     use HasFactory;
-
-
-
-    public function birth_of_place() {
-        return $this->hasMany(ApplicantAddress::class);
-    }
 }
