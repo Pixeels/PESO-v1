@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class ApplicantLanguageSpoken extends Model
 {
     use HasFactory;
+
+    public function applicant() {
+        return $this->belongsTo(Applicant::class);
+    }
 }

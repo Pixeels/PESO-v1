@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class ApplicantEducationalBackground extends Model
 {
     use HasFactory;
+
+
+    public function applicant() {
+        return $this->belongsTo(Applicant::class);
+    }
 }
