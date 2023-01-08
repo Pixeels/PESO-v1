@@ -9,6 +9,20 @@ class Employer extends Model
 {
     use HasFactory;
 
+    public $table = "employers";
+    public $primary_key = "id";
+    public $timestamp = true;
+
+    protected $fillable = [
+        "establishment_name",
+        "establishment_accronym",
+        "TIN_number",
+        "employer_type",
+        "total_work_force",
+        "e_signature",
+        "is_authorization_accepted"
+    ];
+
     public function employer_address() {
         return $this->hasOne(EmployerAddress::class);
     }

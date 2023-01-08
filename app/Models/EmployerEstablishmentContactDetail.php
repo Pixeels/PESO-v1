@@ -9,6 +9,25 @@ class EmployerEstablishmentContactDetail extends Model
 {
     use HasFactory;
 
+    public $table = "employer_establishment_contact_details";
+    public $primary_key = "id";
+    public $timestamp = true;
+
+
+    protected $fillable = [
+        "title",
+        "surname",
+        "firstname",
+        "lastname",
+        "suffix",
+        "position",
+        "telephone_number",
+        "mobile_number",
+        "fax_number",
+        "email_address",
+        "employer_id"
+    ];
+
     public function employer() {
         return $this->belongsTo(Employer::class);
     }

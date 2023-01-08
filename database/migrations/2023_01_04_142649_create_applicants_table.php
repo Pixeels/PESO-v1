@@ -40,7 +40,7 @@ return new class extends Migration
             $table->date('expiry_date');
             $table->string('skills_without_formal_training');
             $table->string('e_signature');
-            $table->integer('isAcceptAutorization');
+            $table->integer('is_authorization_accepted');
             $table->timestamps();
         });
     }

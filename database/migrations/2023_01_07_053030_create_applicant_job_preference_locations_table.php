@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('applicant_job_preference_locations', function (Blueprint $table) {
             $table->id();
             $table->integer('type');
-            $table->string('country_name');
+            $table->string('location');
             $table->unsignedBigInteger('applicant_id');
             $table->foreign('applicant_id')->references('id')->on('applicants');
             $table->timestamps();

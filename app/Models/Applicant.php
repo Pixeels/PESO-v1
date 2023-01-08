@@ -9,6 +9,39 @@ class Applicant extends Model
 {
     use HasFactory;
 
+    public $table = "applicants";
+    public $primary_key = 'id';
+    public $timestamp = true;  
+
+    protected $fillable = [
+        "surname",
+        "firstname",
+        "middlename",
+        "suffix",
+        "birthdate",
+        "civil_status",
+        "height",
+        "email_address",
+        "landline_number",
+        "phone_number",
+        "disability",
+        "TIN_number",
+        "GSIS_SSS_id",
+        "philhealth_id",
+        "is_actively_looking_for_work",
+        "is_willing_to_work_immidiately",
+        "find_job_duration",
+        "when_to_start_working",
+        "is_4Ps",
+        "household_id_4ps",
+        "expected_salary",
+        "passport_number",
+        "expiry_date",
+        "skills_without_formal_training",
+        "e_signature",
+        "is_authorization_accepted"
+    ];
+
 
 
     public function applicant_address() {
