@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class ApplicantFormController extends Controller
 {
     public function index() {
-
+        // return 
     }
 }

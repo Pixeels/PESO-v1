@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/applicant-form', function() {
+    return view('form_layout');
+})->name('applicant-form');
+
 
 // Applicant Form
-Route::get('/applicant', [ApplicantFormController::class, 'index'])->name('applicant-form');
+// Route::get('/applicant', [ApplicantFormController::class, 'index'])->name('applicant-form');
