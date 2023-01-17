@@ -22,13 +22,17 @@ class ApplicantMultiStepForm extends Component
 
     public function nextStep() 
     {
-        // if($this->current_step <= $this->total_steps)
-            $this->current_step++;
+        $this->current_step++;
+        if($this->current_step > $this->total_steps)
+            $this->current_step = $this->total_steps;
+            
     }
 
     public function prevStep() 
     {
-        // if($this->current_step >= $this->total_steps)
-            $this->current_step--;
+        $this->current_step--;
+        if($this->current_step < 1)
+            $this->current_step = 1;
+            
     }
 }
