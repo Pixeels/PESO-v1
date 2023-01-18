@@ -8,7 +8,7 @@
     <title>PESO EMIS</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
 
     <!-- Favicons -->
     <link href="{{ 'img\homepage\peso_icon.png' }}" rel="icon">

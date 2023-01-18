@@ -9,7 +9,16 @@ class ApplicantMultiStepForm extends Component
 
     public $total_steps = 3;
     public $current_step = 1;
-    public $sample = "<p>Sample</p>";
+    public $surname;
+    public $firstname;
+    public $lastname;
+    public $middle_name;
+    public $suffix;
+    public $birthdate;
+    public $religion;
+    public $sex;
+    public $civil_status;
+    public $height;
 
     public function mount() {
         $this->current_step = 1;
@@ -22,6 +31,8 @@ class ApplicantMultiStepForm extends Component
 
     public function nextStep() 
     {
+        $this->resetErrorBag();
+        $this->validateData();
         $this->current_step++;
         if($this->current_step > $this->total_steps)
             $this->current_step = $this->total_steps;
@@ -34,5 +45,21 @@ class ApplicantMultiStepForm extends Component
         if($this->current_step < 1)
             $this->current_step = 1;
             
+    }
+
+    public function validateData() {
+        if($this->current_step == 1) {
+            $this->validate([
+                'surname' => 'required',
+                'firstname' => 'required',
+                'middle_name' => 'required',
+                'suffix' => 'required',
+                'birthdate' => 'required',
+                'religion' => 'required',
+                'sex' => 'required',
+                'civil_status' => 'required',
+                'height' => 'required'
+            ]);
+        }
     }
 }

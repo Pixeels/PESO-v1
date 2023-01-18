@@ -29,55 +29,71 @@
                                     <div class="col-md-6 mb-4">
                                         <label for="inputEmail4"
                                             class="form-label text-xs text-gray-400 fw-bold text-light-emphasis">Surname</label>
-                                        <input type="input" class="form-control border-light-emphasis"
-                                            id="inputEmail4">
+                                        <input type="input" class="form-control text-xs py-2.5 text-gray-400 border-light-emphasis" wire:model="surname">
+                                        <span class="text-danger text-xs">@error('surname')
+                                            {{$message}}
+                                        @enderror</span>
                                     </div>
                                     {{-- First Name --}}
                                     <div class="col-md-6 mb-4">
                                         <label for="inputEmail4" class="form-label text-xs text-gray-400 fw-bold text-light-emphasis">First
                                             Name</label>
-                                        <input type="input" class="form-control border-light-emphasis"
-                                            id="inputEmail4">
+                                        <input type="input" class="form-control py-2.5 text-xs border-light-emphasis"
+                                           wire:model="firstname">
+                                           <span class="text-danger text-xs">@error('firstname')
+                                            {{$message}}
+                                        @enderror</span>
                                     </div>
                                     {{-- Last Name --}}
                                     <div class="col-md-6 mb-4">
                                         <label for="inputEmail4" class="form-label text-xs text-gray-400 fw-bold text-light-emphasis">Middle
                                             Name</label>
-                                        <input type="input" class="form-control border-light-emphasis"
-                                            id="inputEmail4">
+                                        <input type="input" class="form-control py-2.5 text-xs border-light-emphasis"
+                                           wire:model="middle_name">
+                                           <span class="text-danger text-xs">@error('middle_name')
+                                            {{$message}}
+                                        @enderror</span>
                                     </div>
                                     {{-- Suffix --}}
                                     <div class="col-md-6 mb-4">
                                         <label for="inputEmail4"
                                             class="form-label text-xs text-gray-400 fw-bold text-light-emphasis">Suffix</label>
-                                        <input type="input" class="form-control border-light-emphasis"
-                                            placeholder="Ex. Sr., Jr." id="inputEmail4">
+                                        <input type="input" class="form-control py-2.5 text-xs text-gray-100 border-light-emphasis"
+                                            placeholder="Ex. Sr., Jr." wire:model="suffix">
+                                            <span class="text-danger text-xs">@error('suffix')
+                                                {{$message}}
+                                            @enderror</span>
                                     </div>
                                     {{-- Birth of Date --}}
                                     <div class="col-md-6 mb-4">
                                         <label for="inputEmail4" class="form-label text-xs text-gray-400 fw-bold text-light-emphasis">Date of
                                             Birth</label>
-                                        <input type="date" class="form-control border-light-emphasis"
-                                            id="inputEmail4">
+                                        <input type="date" class="form-control py-2.5 text-xs text-gray-400 border-light-emphasis"
+                                             wire:model="birthdate">
+                                             <span class="text-danger text-xs">@error('birthdate')
+                                                {{$message}}
+                                            @enderror</span>
                                     </div>
                                     {{-- Religion --}}
                                     <div class="col-md-6 mb-4">
                                         <label for="inputEmail4"
                                             class="form-label text-xs text-gray-400 fw-bold text-light-emphasis">Religion</label>
-                                        <input type="text" class="form-control border-light-emphasis"
-                                            id="inputEmail4">
+                                        <input type="text" class="form-control py-2.5 text-xs border-light-emphasis"
+                                            wire:model="religion">
+                                            <span class="text-danger text-xs">@error('religion')
+                                                {{$message}}
+                                            @enderror</span>
                                     </div>
                                     {{-- Sex --}}
                                     <div class="col-md-4 mb-4">
                                         <label for="inputEmail4"
-                                            class="form-label text-xs text-gray-400 fw-bold text-light-emphasis">Religion</label>
+                                            class="form-label text-xs text-gray-400 fw-bold text-light-emphasis">Sex</label>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-check">
                                                     <input class="form-check-input border-light-emphasis" type="radio"
-                                                        name="exampleRadios" id="exampleRadios1" value="option1"
-                                                        checked>
-                                                    <label class="form-check-label" for="exampleRadios1">
+                                                       value="option1" checked wire:model="sex">
+                                                    <label class="form-check-label text-xs" for="exampleRadios1">
                                                         Male
                                                     </label>
                                                 </div>
@@ -85,35 +101,44 @@
                                             <div class="col-md-6">
                                                 <div class="form-check">
                                                     <input class="form-check-input border-light-emphasis" type="radio"
-                                                        name="exampleRadios" id="exampleRadios2" value="option2">
-                                                    <label class="form-check-label" for="exampleRadios2">
+                                                         value="option2" wire:model="sex">
+                                                    <label class="form-check-label text-xs" for="exampleRadios2">
                                                         Female
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
+                                        <span class="text-danger text-xs">@error('sex')
+                                            {{$message}}
+                                        @enderror</span>
                                     </div>
                                     <div class="col-md-4 mb-4">
                                         <label for="inputEmail4" class="form-label text-xs text-gray-400 fw-bold text-light-emphasis">Civil
                                             Status</label>
-                                        <select class="form-select border-light-emphasis"
-                                            aria-label="Default select example">
+                                        <select class="form-select text-xs py-2.5 border-light-emphasis"
+                                            aria-label="Default select example" wire:model="civil_status">
                                             <option selected value="0">Single</option>
                                             <option value="1">Married</option>
                                             <option value="2">Widowed</option>
                                             <option value="3">Seperated</option>
                                             <option value="3">Live-in</option>
                                         </select>
+                                        <span class="text-danger text-xs">@error('civil_status')
+                                            {{$message}}
+                                        @enderror</span>
                                     </div>
                                     <div class="col-md-4 mb-4">
                                         <label for="inputEmail4"
                                             class="form-label text-xs text-gray-400 fw-bold text-light-emphasis">Height</label>
                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control border-light-emphasis"
-                                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                            <span class="input-group-text border-light-emphasis"
-                                                id="basic-addon2">cm</span>
+                                            <input type="text" class="form-control py-2.5 text-xs border-light-emphasis"
+                                                aria-label="Recipient's username" aria-describedby="basic-addon2" wire:model="height" >
+                                            <span class="input-group-text text-xs border-light-emphasis"
+                                                >cm</span>
                                         </div>
+                                        <span class="text-danger text-xs">@error('height')
+                                            {{$message}}
+                                        @enderror</span>
                                     </div>
                                 </div>
                             </div>
@@ -473,9 +498,9 @@
                             <div style="display: {{ $current_step == 1 ? 'block' : 'none' }}; "></div>
                             {{-- @endif --}}
                             {{-- @if ($current_step == 2 || $current_step == 3) --}}
-                            <button type="button" class="btn btn-md btn-secondary"
-                                style="display: {{ $current_step == 2 || $current_step == 3 ? 'block' : 'none' }}; "
-                                wire:click="prevStep()">Back</button>
+                            <button type="button" class="btn btn-md btn btn-md  gap-3 py-2 px-4 !rounded-full text-xs text-white font-bold bg-indigo-400"
+                                style="display: {{ $current_step == 2 || $current_step == 3 ? 'flex' : 'none' }}; "
+                                wire:click="prevStep()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 fill-white"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M109.3 288L480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288z"/></svg> Back </button>
                             {{-- @endif --}}
                             {{-- @if ($current_step == 1 || $current_step == 2) --}}
                             <button type="button" class="btn btn-md d-flex gap-3 py-2 !bg-pink-400 px-4 !rounded-full" wire:click="nextStep()"
