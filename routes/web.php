@@ -19,8 +19,12 @@ Route::get('/', function () {
 });
 
 Route::get('/applicant-form', function() {
-    return view('form_layout');
+    return view('applicant_form');
 })->name('applicant-form');
+
+Route::get('/employer-form', function() {
+    return view('employer_form');
+})->name('employer-form');
 
 
 // Applicant Form

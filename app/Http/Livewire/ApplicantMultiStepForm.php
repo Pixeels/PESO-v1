@@ -7,7 +7,7 @@ use Livewire\Component;
 class ApplicantMultiStepForm extends Component
 {
 
-    public $total_steps = 3;
+    public $total_steps = 10;
     public $current_step = 1;
     public $surname;
     public $firstname;
@@ -31,8 +31,8 @@ class ApplicantMultiStepForm extends Component
 
     public function nextStep() 
     {
-        $this->resetErrorBag();
-        $this->validateData();
+        // $this->resetErrorBag();
+        // $this->validateData();
         $this->current_step++;
         if($this->current_step > $this->total_steps)
             $this->current_step = $this->total_steps;
