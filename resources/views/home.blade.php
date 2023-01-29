@@ -304,7 +304,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="icon-box" data-aos="zoom-in-left">
                             <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
-                            <h4 class="title"><a href="/employer">Employers Form</a></h4>
+                            <h4 class="title"><a href="{{route('employer-form')}}">Employers Form</a></h4>
                             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
                                 excepturi sint occaecati cupiditate non provident</p>
                         </div>

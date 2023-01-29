@@ -8,13 +8,16 @@
     <title>PESO EMIS</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-    {{-- @vite('resources/css/app.css') --}}
+    @vite('resources/css/app.css')
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Favicons -->
     <link href="{{ 'img\homepage\peso_icon.png' }}" rel="icon">
     <link href="{{ 'img\homepage\apple-touch-icon.png' }}" rel="apple-touch-icon">
-
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    {{-- Add location api --}}
+    <script src="https://f001.backblazeb2.com/file/buonzz-assets/jquery.ph-locations-v1.0.0.js"></script>
+    
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
