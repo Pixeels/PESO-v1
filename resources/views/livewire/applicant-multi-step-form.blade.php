@@ -1939,7 +1939,7 @@
                             <button type="button"
                                 class="btn btn-md d-flex gap-3 py-2 !bg-pink-400 px-4 !rounded-full"
                                 wire:click="nextStep()"
-                                style="display: {{ $current_step == 1 || $current_step == 2 || $current_step == 3  || $current_step == 4 || $current_step == 5 || $current_step == 6 || $current_step == 7 || $current_step == 8 || $current_step == 9 ? 'block' : 'none' }}; "><span
+                                style="display: {{ $current_step == 1 || $current_step == 2 || $current_step == 3  || $current_step == 4 || $current_step == 5 || $current_step == 6 || $current_step == 7 || $current_step == 8 || $current_step == 9 ? 'block' : 'none !important' }}; "><span
                                     class="!text-xs font-bold text-white">Next</span> <svg
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                                     class="w-4 h-4 fill-white">
@@ -1950,7 +1950,7 @@
                             {{-- @endif --}}
                             {{-- @if ($current_step == 3) --}}
                             <button type="submit"
-                                class="btn btn-md btn-primary"style="display: {{ $current_step == 10 ? 'block' : 'none' }}; ">Submit</button>
+                                class="btn btn-md btn-primary !bg-blue-900 !border-blue-900"style="display: {{ $current_step == 10 ? 'block' : 'none' }}; ">Submit</button>
                             {{-- @endif --}}
                         </div>
                     </form>
@@ -1970,8 +1970,8 @@
                 class="text-center !leading-5 h-8 w-8 !text-xs !text-gray-400 font-bold border-2 !border-indigo-500 rounded-full border p-1"
                 style="border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;">3</span>
                 <span
-                class="text-center !leading-5 h-8 w-8 !text-xs text-pink-500 font-bold border-2 !border-indigo-500 rounded-full border p-1"
-                style="border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;">4</span>
+                class="text-center !leading-5 h-8 w-8 !text-xs text-gray-400 font-bold border-2 !border-indigo-500 rounded-full border p-1"
+                style="border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;">4</span>
             <span
                 class="text-center !leading-5 h-8 w-8 !text-xs !text-gray-400 font-bold border-2 !border-indigo-500 rounded-full border p-1"
                 style="border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;">5</span>
@@ -1979,8 +1979,8 @@
                 class="text-center !leading-5 h-8 w-8 !text-xs !text-gray-400 font-bold border-2 !border-indigo-500 rounded-full border p-1"
                 style="border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;">6</span>
                 <span
-                class="text-center !leading-5 h-8 w-8 !text-xs text-pink-500 font-bold border-2 !border-indigo-500 rounded-full border p-1"
-                style="border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;">7</span>
+                class="text-center !leading-5 h-8 w-8 !text-xs text-gray-400 font-bold border-2 !border-indigo-500 rounded-full border p-1"
+                style="border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;">7</span>
             <span
                 class="text-center !leading-5 h-8 w-8 !text-xs !text-gray-400 font-bold border-2 !border-indigo-500 rounded-full border p-1"
                 style="border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;">8</span>

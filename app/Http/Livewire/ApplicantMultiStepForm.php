@@ -29,22 +29,22 @@ class ApplicantMultiStepForm extends Component
         return view('livewire.applicant-multi-step-form');
     }
 
-    public function nextStep() 
+    public function nextStep()
     {
         // $this->resetErrorBag();
         // $this->validateData();
         $this->current_step++;
         if($this->current_step > $this->total_steps)
             $this->current_step = $this->total_steps;
-            
+
     }
 
-    public function prevStep() 
+    public function prevStep()
     {
         $this->current_step--;
         if($this->current_step < 1)
             $this->current_step = 1;
-            
+
     }
 
     public function validateData() {
