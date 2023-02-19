@@ -29,7 +29,8 @@ class EmployerQualificationRequirementSeeder extends Seeder
             "certification" => "N/A",
             "language_or_dialect" => "English",
             "preferred_residence" => "valencia city",
-            "accepts" => "PESO",
+            "nature_of_work" => "PESO",
+            "other_qualification" => "PESO",
             "employer_id" => 1
         ]);
     }

@@ -21,6 +21,7 @@ class EmployerSeeder extends Seeder
             "TIN_number" => '3804-3423',
             "employer_type" => 'Recruitment & Placement Agency',
             "total_work_force" => 'Medium (100-199) ',
+            "line_of_business" => 'Test',
             "e_signature" => 'brightlocal_esignature.png',
             "is_authorization_accepted" => 1
         ]);

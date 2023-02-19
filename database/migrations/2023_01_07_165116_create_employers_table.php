@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('TIN_number');
             $table->string('employer_type');
             $table->string('total_work_force');
+            $table->string('line_of_business');
             $table->string('e_signature');
             $table->integer('is_authorization_accepted');
             $table->timestamps();

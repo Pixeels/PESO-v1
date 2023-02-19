@@ -17,6 +17,7 @@ class EmployerVacancyDetailSeeder extends Seeder
     {
         EmployerVacancyDetail::create([
             "position_title" => "Citation Builder",
+            "job_description" => "Part-time",
             "nature_of_work" => "Part-time",
             "place_of_work" => "valencia city",
             "salary" => "2000+",

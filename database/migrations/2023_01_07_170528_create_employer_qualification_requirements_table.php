@@ -28,7 +28,8 @@ return new class extends Migration
             $table->string('certification');
             $table->string('language_or_dialect');
             $table->string('preferred_residence');
-            $table->string('accepts');
+            $table->string('other_qualification');
+            $table->string('nature_of_work');
             $table->unsignedBigInteger('employer_id');
             $table->foreign('employer_id')->references('id')->on('employers');
             $table->timestamps();

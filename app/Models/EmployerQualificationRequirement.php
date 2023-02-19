@@ -27,7 +27,8 @@ class EmployerQualificationRequirement extends Model
         "certification",
         "language_or_dialect",
         "preferred_residence",
-        "accepts",
+        "other_qualification",
+        "nature_of_work",
         "employer_id"
     ];
 

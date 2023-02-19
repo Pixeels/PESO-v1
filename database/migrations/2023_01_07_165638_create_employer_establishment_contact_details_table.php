@@ -16,10 +16,7 @@ return new class extends Migration
         Schema::create('employer_establishment_contact_details', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('surname');
-            $table->string('firstname');
-            $table->string('lastname');
-            $table->string('suffix');
+            $table->string('fullname');
             $table->string('position');
             $table->string('telephone_number');
             $table->string('mobile_number');

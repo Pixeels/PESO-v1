@@ -35,6 +35,7 @@
 
     <!-- Template Main CSS File -->
     <link href="{{ 'css\homepage.css' }}" rel="stylesheet">
+    <link href="{{ 'css\style.css' }}" rel="stylesheet">
     @livewireStyles
 
 </head>

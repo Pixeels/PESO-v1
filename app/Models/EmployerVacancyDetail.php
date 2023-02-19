@@ -17,6 +17,7 @@ class EmployerVacancyDetail extends Model
         "position_title",
         "nature_of_work",
         "place_of_work",
+        "job_description",
         "salary",
         "vacancy_count",
         "employer_id"

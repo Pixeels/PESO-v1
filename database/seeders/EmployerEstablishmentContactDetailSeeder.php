@@ -17,10 +17,7 @@ class EmployerEstablishmentContactDetailSeeder extends Seeder
     {
         EmployerEstablishmentContactDetail::create([
             "title" => "Miss",
-            "surname" => "Jane",
-            "firstname" => "Doe",
-            "lastname" => "Bod",
-            "suffix" => "N/A",
+            "fullname" => "Jane Doe",
             "position" => "President",
             "telephone_number" => "N/A",
             "mobile_number" => "084354354",
