@@ -178,7 +178,7 @@ $(function() {
 
 // 
 
-var count = 5;
+var count = 9;
 console.log(count);
 // counter
 var counter = () => {
@@ -1143,28 +1143,121 @@ var validate_step_3 = () => {
 
 var validate_step_4 = () => {
     var data = {
-
+        'is_can_read_english': $('.is_can_read_english').val(),
+        'is_can_write_english': $('.is_can_write_english').val(),
+        'is_can_speak_english': $('.is_can_speak_english').val(),
+        'is_can_understand_english': $('.is_can_understand_english').val(),
+        'is_can_read_filipino': $('.is_can_read_filipino').val(),
+        'is_can_write_filipino': $('.is_can_write_filipino').val(),
+        'is_can_speak_filipino': $('.is_can_speak_filipino').val(),
+        'is_can_understand_filipino': $('.is_can_understand_filipino').val(),
+        'is_can_read_others': $('.is_can_read_others').val(),
+        'is_can_write_others': $('.is_can_write_others').val(),
+        'is_can_speak_others': $('.is_can_speak_others').val(),
+        'is_can_understand_others': $('.is_can_understand_others').val(),
     }
 }
 
 var validate_step_5 = () => {
-
+    var data = {
+        'elementary_school': $('.elementary_school'),
+        'elementary_course': $('.elementary_course'),
+        'elementary_year_graduated': $('.elementary_year_graduated'),
+        'elementary_undergraduate_level': $('.elementary_undergraduate_level'),
+        'elementary_undergraduate_last_attended': $('.elementary_undergraduate_last_attended'),
+        'elementary_awards_recieved': $('.elementary_awards_recieved'),
+        'secondary_school': $('.secondary_school'),
+        'secondary_course': $('.secondary_course'),
+        'secondary_year_graduated': $('.secondary_year_graduated'),
+        'secondary_undergraduate_level': $('.secondary_undergraduate_level'),
+        'secondary_undergraduate_last_attended': $('.secondary_undergraduate_last_attended'),
+        'secondary_awards_recieved': $('.secondary_awards_recieved'),
+        'tertiary_school': $('.tertiary_school'),
+        'tertiary_course': $('.tertiary_course'),
+        'tertiary_year_graduated': $('.tertiary_year_graduated'),
+        'tertiary_undergraduate_level': $('.tertiary_undergraduate_level'),
+        'tertiary_undergraduate_last_attended': $('.tertiary_undergraduate_last_attended'),
+        'tertiary_awards_recieved': $('.tertiary_awards_recieved'),
+        'graduate_school': $('.graduate_school'),
+        'graduate_course': $('.graduate_course'),
+        'graduate_year_graduated': $('.graduate_year_graduated'),
+        'graduate_undergraduate_level': $('.graduate_undergraduate_level'),
+        'graduate_last_attendend': $('.graduate_last_attendend'),
+        'graduate_awards_recieved': $('.graduate_awards_recieved'),
+    }
 }
 
 var validate_step_6 = () => {
-
+    var data = {
+        'technical_course_1' : $('.technical_course_1').val(),
+        'technical_course_duration_start_1' : $('.technical_course_duration_start_1').val(),
+        'technical_course_duration_end_1' : $('.technical_course_duration_end_1').val(),
+        'technical_course_training_instituition_1' : $('.technical_course_training_instituition_1').val(),
+        'technical_course_certificates_recieved_1' : $('.technical_course_certificates_recieved_1').val(),
+        'technical_course_2' : $('.technical_course_2').val(),
+        'technical_course_duration_start_2' : $('.technical_course_duration_start_2').val(),
+        'technical_course_duration_end_2' : $('.technical_course_duration_end_2').val(),
+        'technical_course_training_instituition_2' : $('.technical_course_training_instituition_2').val(),
+        'technical_course_certificates_recieved_2' : $('.technical_course_certificates_recieved_2').val(),
+        'technical_course_3' : $('.technical_course_3').val(),
+        'technical_course_duration_start_3' : $('.technical_course_duration_start_3').val(),
+        'technical_course_duration_end_3' : $('.technical_course_duration_end_3').val(),
+        'technical_course_training_instituition_3' : $('.technical_course_training_instituition_3').val(),
+        'technical_course_certificates_recieved_3' : $('.technical_course_certificates_recieved_3').val(),
+    }
 }
 
 var validate_step_7 = () => {
-
+    var data = {
+        'eligibility_civil_service__name_1' : $('.eligibility_civil_service__name_1').val(),
+        'eligibility_civil_service__rating_1' : $('.eligibility_civil_service__rating_1').val(),
+        'eligibility_civil_service__examination_date_1' : $('.eligibility_civil_service__examination_date_1').val(),
+        'eligibility_civil_service__name_2' : $('.eligibility_civil_service__name_2').val(),
+        'eligibility_civil_service__rating_2' : $('.eligibility_civil_service__rating_2').val(),
+        'eligibility_civil_service__examination_date_2' : $('.eligibility_civil_service__examination_date_2').val(),
+        'prc_name_1' : $('.prc_name_1').val(),
+        'prc_valid_until_1' : $('.prc_valid_until_1').val(),
+        'prc_name_2' : $('.prc_name_2').val(),
+        'prc_valid_until_2' : $('.prc_valid_until_2').val(),
+    }
 }
 
 var validate_step_8 = () => {
-
+    var data = {
+        'work_experience_company_name_1': $('.work_experience_company_name_1').val(),
+        'work_experience_company_address_1': $('.work_experience_company_address_1').val(),
+        'work_experience_company_position_1': $('.work_experience_company_position_1').val(),
+        'work_experience_company_inclusive_date_1': $('.work_experience_company_inclusive_date_1').val(),
+        'work_experience_company_status_1': $('.work_experience_company_status_1').val(),
+        'work_experience_company_name_2': $('.work_experience_company_name_2').val(),
+        'work_experience_company_address_2': $('.work_experience_company_address_2').val(),
+        'work_experience_company_position_2': $('.work_experience_company_position_2').val(),
+        'work_experience_company_inclusive_date_2': $('.work_experience_company_inclusive_date_2').val(),
+        'work_experience_company_status_2': $('.work_experience_company_status_2').val(),
+        'work_experience_company_name_3': $('.work_experience_company_name_3').val(),
+        'work_experience_company_address_3': $('.work_experience_company_address_3').val(),
+        'work_experience_company_position_3': $('.work_experience_company_position_3').val(),
+        'work_experience_company_inclusive_date_3': $('.work_experience_company_inclusive_date_3').val(),
+        'work_experience_company_status_3': $('.work_experience_company_status_3').val(),
+        'work_experience_company_name_4': $('.work_experience_company_name_4').val(),
+        'work_experience_company_address_4': $('.work_experience_company_address_4').val(),
+        'work_experience_company_position_4': $('.work_experience_company_position_4').val(),
+        'work_experience_company_inclusive_date_4': $('.work_experience_company_inclusive_date_4').val(),
+        'work_experience_company_status_4': $('.work_experience_company_status_4').val(),
+        'work_experience_company_name_5': $('.work_experience_company_name_5').val(),
+        'work_experience_company_address_5': $('.work_experience_company_address_5').val(),
+        'work_experience_company_position_5': $('.work_experience_company_position_5').val(),
+        'work_experience_company_inclusive_date_5': $('.work_experience_company_inclusive_date_5').val(),
+        'work_experience_company_status_5': $('.work_experience_company_status_5').val(),
+    }
 }
 
 var validate_step_9 = () => {
+    // var data = {
 
+    // }
+
+    console.log($('.osawft').val());
 }
 
 var validate_step_10 = () => {

@@ -29,6 +29,7 @@
                   border border-solid border-gray-300
                   rounded
                   transition
+                  upload-applicant-signature
                   ease-in-out
                   m-0
                   focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFile">

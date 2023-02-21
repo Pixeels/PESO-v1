@@ -6,12 +6,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Auto Mechanic">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Auto Mechanic
                         </label>
                     </div>
@@ -19,12 +19,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Electrician">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Electrician
                         </label>
                     </div>
@@ -32,12 +32,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Photography">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Photography
                         </label>
                     </div>
@@ -45,12 +45,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Beautician">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Beautician
                         </label>
                     </div>
@@ -58,24 +58,24 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Embroidery">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Embroidery
                         </label>
                     </div>
                 </div><div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Plumbing">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Plumbing
                         </label>
                     </div>
@@ -83,12 +83,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Carpentry Work">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Carpentry Work
                         </label>
                     </div>
@@ -96,12 +96,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Gardening">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Gardening
                         </label>
                     </div>
@@ -109,12 +109,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Sewing Dresses">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Sewing Dresses
                         </label>
                     </div>
@@ -122,12 +122,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Computer Literate">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Computer Literate
                         </label>
                     </div>
@@ -135,12 +135,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Masonry">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Masonry
                         </label>
                     </div>
@@ -148,12 +148,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Stenography">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Stenography
                         </label>
                     </div>
@@ -161,12 +161,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Domestic Chores">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Domestic Chores
                         </label>
                     </div>
@@ -174,12 +174,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Painter/Artist">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Painter/Artist
                         </label>
                     </div>
@@ -187,12 +187,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Tailoring">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Tailoring
                         </label>
                     </div>
@@ -200,12 +200,12 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Driving">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Driving
                         </label>
                     </div>
@@ -213,19 +213,19 @@
                 <div class="col-md-4">
                     <div class="form-check">
                         <input
-                            class="form-check-input local_preferred_work_location border-light-emphasis"
-                            type="checkbox" name="exampleRadios"
-                            id="exampleRadios1" value="option1">
+                            class="form-check-input osawft local_preferred_work_location border-light-emphasis"
+                            type="checkbox" name="osawft"
+                            id="osawft" value="Painting Jobs">
                         <label
                             class="form-check-label !text-xs !py-2.5 !text-gray-500"
-                            for="exampleRadios1">
+                            for="osawft">
                             Painting Jobs
                         </label>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <input type="input" placeholder="Others: "
-                            class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                            class="form-control osawft !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
                 </div>
             </div>
         </div>

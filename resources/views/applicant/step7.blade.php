@@ -25,15 +25,15 @@
                     <label for="inputEmail4"
                         class="form-label !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">1</label>
                     <input type="input"
-                        class="form-control !text-xs islocal_preferred_work_location !py-2.5 !text-gray-500 border-light-emphasis">
+                        class="form-control eligibility_civil_service__name_1 !text-xs islocal_preferred_work_location !py-2.5 !text-gray-500 border-light-emphasis">
                 </div>
                 <div class="col-md-4">
                     <input type="input"
-                        class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                        class="form-control !text-xs elig  eligibility_civil_service__rating_1  !py-2.5 !text-gray-500 border-light-emphasis">
                 </div>
                 <div class="col-md-4">
                     <input type="date"
-                        class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                        class="form-control !text-xs !py-2.5 eligibility_civil_service__examination_date_1 !text-gray-500 border-light-emphasis">
                 </div>
             </div>
             <div class="row mb-4">
@@ -41,15 +41,15 @@
                     <label for="inputEmail4"
                         class="form-label !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">2</label>
                     <input type="input"
-                        class="form-control !text-xs islocal_preferred_work_location !py-2.5 !text-gray-500 border-light-emphasis">
+                        class="form-control eligibility_civil_service__name_2 !text-xs islocal_preferred_work_location !py-2.5 !text-gray-500 border-light-emphasis">
                 </div>
                 <div class="col-md-4">
                     <input type="input"
-                        class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                        class="form-control !text-xs elig  eligibility_civil_service__rating_2  !py-2.5 !text-gray-500 border-light-emphasis">
                 </div>
                 <div class="col-md-4">
                     <input type="date"
-                        class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                        class="form-control !text-xs !py-2.5 eligibility_civil_service__examination_date_2 !text-gray-500 border-light-emphasis">
                 </div>
             </div>
             <div class="row">
@@ -69,11 +69,11 @@
                     <label for="inputEmail4"
                         class="form-label !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">1</label>
                     <input type="input"
-                        class="form-control !text-xs islocal_preferred_work_location !py-2.5 !text-gray-500 border-light-emphasis">
+                        class="form-control prc_name_1 !text-xs islocal_preferred_work_location !py-2.5 !text-gray-500 border-light-emphasis">
                 </div>
                 <div class="col-md-6">
                     <input type="date"
-                        class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                        class="form-control !text-xs prc_valid_until_1 !py-2.5 !text-gray-500 border-light-emphasis">
                 </div>
             </div>
             <div class="row mb-6">
@@ -81,11 +81,11 @@
                     <label for="inputEmail4"
                         class="form-label !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">2</label>
                     <input type="input"
-                        class="form-control !text-xs islocal_preferred_work_location !py-2.5 !text-gray-500 border-light-emphasis">
+                        class="form-control prc_name_2 !text-xs islocal_preferred_work_location !py-2.5 !text-gray-500 border-light-emphasis">
                 </div>
                 <div class="col-md-6">
                     <input type="date"
-                        class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                        class="form-control !text-xs prc_valid_until_2 !py-2.5 !text-gray-500 border-light-emphasis">
                 </div>
             </div>
         </div>
