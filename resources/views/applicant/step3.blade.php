@@ -1,4 +1,4 @@
-<div class="step-four {{ $current_step == 3 ? 'd-block' : 'd-none' }}">
+<div class="step-3">
     <div class="py-5 card border-0 rounded-0">
         <h4 class="card-header pl-0 border-0 fw-bold">2. Job Preference </h4>
         <div class="card-body pl-0 pt-3">
@@ -6,33 +6,35 @@
             <div class="row">
                 {{-- Place of Birth --}}
                 <div class="col-md-12 mb-4">
-                    <h5 class="fw-bold text-dark-emphasis mb-4 text-gray-500 !text-md">
+                    <h5 class="fw-bold text-dark-emphasis  mb-4 text-gray-500 !text-md">
                         Preferred Occupation</h5>
                     <div class="row">
                         <div class="col-md-12 mb-4  d-flex flex-row align-items-center gap-3 ">
                             <label for="inputEmail4"
                                 class="form-label !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">1</label>
                             <input type="input"
-                                class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                                class="form-control preferred_occupation !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
                         </div>
                         <div class="col-md-12 mb-4  d-flex flex-row align-items-center gap-3 ">
                             <label for="inputEmail4"
                                 class="form-label !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">2</label>
                             <input type="input"
-                                class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                                class="form-control preferred_occupation !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
                         </div>
                         <div class="col-md-12 mb-4  d-flex flex-row align-items-center gap-3 ">
                             <label for="inputEmail4"
                                 class="form-label !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">3</label>
                             <input type="input"
-                                class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                                class="form-control preferred_occupation !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
                         </div>
                         <div class="col-md-12 mb-4  d-flex flex-row align-items-center gap-3 ">
                             <label for="inputEmail4"
-                                class="form-label !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">4</label>
+                                class="form-label preferred_occupation !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">4</label>
                             <input type="input"
                                 class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
                         </div>
+                        <span class="text-danger !text-xs preferred_occupation-error">
+                        </span>
                     </div>
                 </div>
 
@@ -132,7 +134,7 @@
                         class="form-label !text-xs !text-gray-400 fw-bold text-light-emphasis">Expected
                         Salary (Range) </label>
                     <input type="text"
-                        class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
+                        class="form-control expected_salary !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
                         id="inputEmail4">
                 </div>
                 {{-- Passport No.r --}}
@@ -141,7 +143,7 @@
                         class="form-label !text-xs !text-gray-400 fw-bold text-light-emphasis">Passport
                         No.</label>
                     <input type="text"
-                        class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
+                        class="form-control passport_number !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
                         id="inputEmail4">
                 </div>
                 {{-- Expiry date --}}
@@ -150,7 +152,7 @@
                         class="form-label !text-xs !text-gray-400 fw-bold text-light-emphasis">Expiry
                         date</label>
                     <input type="text"
-                        class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
+                        class="form-control expiry_date !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
                         id="inputEmail4">
                 </div>
             </div>

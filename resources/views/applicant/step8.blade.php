@@ -1,4 +1,4 @@
-<div class="step-four {{ $current_step == 8 ? 'd-block' : 'd-none' }}">
+<div class="step-8">
     <div class="py-5 card border-0 rounded-0">
         <h4 class="card-header pl-0 border-0 fw-bold">8. WORK EXPERIENCE (Limit to 10 year
             period, start with the most recent employment) </h4>

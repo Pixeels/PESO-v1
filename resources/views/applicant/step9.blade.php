@@ -1,4 +1,4 @@
-<div class="step-four {{ $current_step == 9 ? 'd-block' : 'd-none' }}">
+<div class="step-9">
     <div class="py-5 card border-0 rounded-0">
         <h4 class="card-header pl-0 border-0 fw-bold">8. OTHER SKILLS ACQUIRED WITHOUT FORMAL TRAINING                                </h4>
         <div class="card-body pl-0 pt-3">

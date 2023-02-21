@@ -1,4 +1,4 @@
-<div class="step-four {{ $current_step == 6 ? 'd-block' : 'd-none' }}">
+<div class="step-6">
     <div class="py-5 card border-0 rounded-0">
         <h4 class="card-header pl-0 border-0 fw-bold">6. TECHNICAL/VOCATIONAL AND OTHER
             TRAINING (Include courses takens as part of college education) </h4>

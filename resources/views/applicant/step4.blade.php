@@ -1,4 +1,4 @@
-<div class="step-four {{ $current_step == 4 ? 'd-block' : 'd-none' }}">
+<div class="step-4">
     <div class="py-5 card border-0 rounded-0">
         <h4 class="card-header pl-0 border-0 fw-bold">3. LANGUAGE / DIALECT PROFICIENCY </h4>
         <div class="card-body pl-0 pt-3">
@@ -38,27 +38,27 @@
                     <div class="row">
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_read_english local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
-                                value="option1">
+                                value="1">
                         </div>
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_write_english local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
-                                value="option1">
+                                value="1">
                         </div>
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_speak_english local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
-                                value="option1">
+                                value="1">
                         </div>
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_understand_english local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
-                                value="option1">
+                                value="1">
                         </div>
                     </div>
                 </div>
@@ -73,27 +73,27 @@
                     <div class="row">
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_read_filipino local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
-                                value="option1">
+                                value="1">
                         </div>
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_write_filipino local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
-                                value="option1">
+                                value="1">
                         </div>
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_speak_filipino local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
-                                value="option1">
+                                value="1">
                         </div>
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_understand_filipino local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
-                                value="option1">
+                                value="1">
                         </div>
                     </div>
                 </div>
@@ -101,32 +101,32 @@
             <div class="row mb-4">
                 <div class="col-md-4">
                     <input type="input"
-                        class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
+                        class="form-control !text-xs  !py-2.5 !text-gray-500 border-light-emphasis"
                         placeholder="Others: ">
                 </div>
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_read_others local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
                                 value="option1">
                         </div>
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_write_others local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
                                 value="option1">
                         </div>
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_speak_others local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
                                 value="option1">
                         </div>
                         <div class="col-md-3">
                             <input
-                                class="form-check-input local_preferred_work_location border-light-emphasis"
+                                class="form-check-input is_can_understand_others local_preferred_work_location border-light-emphasis"
                                 type="checkbox" name="exampleRadios" id="exampleRadios1"
                                 value="option1">
                         </div>

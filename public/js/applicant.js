@@ -173,3 +173,1000 @@ $(function() {
     $('.pa_province').ph_locations('fetch_list');
 
 });
+
+
+
+// 
+
+var count = 5;
+console.log(count);
+// counter
+var counter = () => {
+    switch (count) {
+        case 1:
+            $('.button-1').removeClass('d-none');
+            $('.button-1').addClass('d-block');
+            $('.next-button').removeClass('d-none');
+            $('.next-button').addClass('d-flex');
+            $('.prev-button').addClass('d-none');
+            $('.submit-button').addClass('d-none');
+            $('.step-1').removeClass('d-none');
+            $('.step-1').addClass('d-block');
+            $('.step-2').addClass('d-none');
+            $('.step-3').addClass('d-none');
+            $('.step-4').addClass('d-none');
+            $('.step-5').addClass('d-none');
+            $('.step-6').addClass('d-none');
+            $('.step-7').addClass('d-none');
+            $('.step-8').addClass('d-none');
+            $('.step-9').addClass('d-none');
+            $('.step-10').addClass('d-none');
+            $('.nav-1').removeClass('!text-gray-400');
+            $('.nav-1').addClass('text-pink-400');
+            $('.nav-2').addClass('!text-gray-400');
+            $('.nav-3').addClass('!text-gray-400');
+            $('.nav-4').addClass('!text-gray-400');
+            $('.nav-5').addClass('!text-gray-400');
+            $('.nav-6').addClass('!text-gray-400');
+            $('.nav-7').addClass('!text-gray-400');
+            $('.nav-8').addClass('!text-gray-400');
+            $('.nav-9').addClass('!text-gray-400');
+            $('.nav-10').addClass('!text-gray-400');
+            $('.counter-1').removeClass('!text-gray-500');
+            $('.counter-1').addClass('text-pink-500');
+            $('.counter-1').attr('style', 'border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;');
+            $('.counter-2').addClass('!text-gray-500');
+            $('.counter-2').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-3').addClass('!text-gray-500');
+            $('.counter-3').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-4').addClass('!text-gray-500');
+            $('.counter-4').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-5').addClass('!text-gray-500');
+            $('.counter-5').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-6').addClass('!text-gray-500');
+            $('.counter-6').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-7').addClass('!text-gray-500');
+            $('.counter-7').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-8').addClass('!text-gray-500');
+            $('.counter-8').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-9').addClass('!text-gray-900');
+            $('.counter-9').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-10').addClass('!text-gray-900');
+            $('.counter-10').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            break;
+        
+        case 2:
+            $('.button-1').addClass('d-none');
+            $('.button-1').removeClass('d-block');
+            $('.next-button').removeClass('d-none');
+            $('.next-button').addClass('d-flex');
+            $('.prev-button').removeClass('d-none');
+            $('.prev-button').addClass('d-flex');
+            $('.submit-button').addClass('d-none');
+            $('.step-1').removeClass('d-block');
+            $('.step-1').addClass('d-none');
+            $('.step-2').removeClass('d-none');
+            $('.step-2').addClass('d-block');
+            $('.step-3').addClass('d-none');
+            $('.step-4').addClass('d-none');
+            $('.step-5').addClass('d-none');
+            $('.step-6').addClass('d-none');
+            $('.step-7').addClass('d-none');
+            $('.step-8').addClass('d-none');
+            $('.step-9').addClass('d-none');
+            $('.step-10').addClass('d-none');
+            $('.nav-1').removeClass('!text-gray-400');
+            $('.nav-1').addClass('text-pink-400');
+            $('.nav-2').addClass('!text-gray-400');
+            $('.nav-3').addClass('!text-gray-400');
+            $('.nav-4').addClass('!text-gray-400');
+            $('.nav-5').addClass('!text-gray-400');
+            $('.nav-6').addClass('!text-gray-400');
+            $('.nav-7').addClass('!text-gray-400');
+            $('.nav-8').addClass('!text-gray-400');
+            $('.nav-9').addClass('!text-gray-400');
+            $('.nav-10').addClass('!text-gray-400');
+            $('.counter-1').removeClass('!text-gray-500');
+            $('.counter-1').addClass('text-pink-500');
+            $('.counter-1').attr('style', 'border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;');
+            $('.counter-2').addClass('!text-gray-500');
+            $('.counter-2').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-3').addClass('!text-gray-500');
+            $('.counter-3').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-4').addClass('!text-gray-500');
+            $('.counter-4').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-5').addClass('!text-gray-500');
+            $('.counter-5').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-6').addClass('!text-gray-500');
+            $('.counter-6').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-7').addClass('!text-gray-500');
+            $('.counter-7').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-8').addClass('!text-gray-500');
+            $('.counter-8').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-9').addClass('!text-gray-900');
+            $('.counter-9').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-10').addClass('!text-gray-900');
+            $('.counter-10').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            break;
+        case 3:
+            $('.button-1').addClass('d-none');
+            $('.button-1').removeClass('d-block');
+            $('.next-button').removeClass('d-none');
+            $('.next-button').addClass('d-flex');
+            $('.prev-button').removeClass('d-none');
+            $('.prev-button').addClass('d-flex');
+            $('.submit-button').addClass('d-none');
+            $('.step-1').removeClass('d-block');
+            $('.step-1').addClass('d-none');
+            $('.step-2').removeClass('d-block');
+            $('.step-2').addClass('d-none');
+            $('.step-3').removeClass('d-none');
+            $('.step-3').addClass('d-block');
+            $('.step-4').addClass('d-none');
+            $('.step-5').addClass('d-none');
+            $('.step-6').addClass('d-none');
+            $('.step-7').addClass('d-none');
+            $('.step-8').addClass('d-none');
+            $('.step-9').addClass('d-none');
+            $('.step-10').addClass('d-none');
+            $('.nav-1').removeClass('text-pink-400');
+            $('.nav-1').addClass('!text-gray-400');
+            $('.nav-2').removeClass('!text-gray-400');
+            $('.nav-2').addClass('text-pink-400');
+            $('.nav-3').addClass('!text-gray-400');
+            $('.nav-4').addClass('!text-gray-400');
+            $('.nav-5').addClass('!text-gray-400');
+            $('.nav-6').addClass('!text-gray-400');
+            $('.nav-7').addClass('!text-gray-400');
+            $('.nav-8').addClass('!text-gray-400');
+            $('.counter-1').removeClass('text-pink-500');
+            $('.counter-1').addClass('!text-gray-500');
+            $('.counter-1').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-2').removeClass('!text-gray-500');
+            $('.counter-2').addClass('text-pink-500');
+            $('.counter-2').attr('style', 'border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;');
+            $('.counter-3').addClass('!text-gray-500');
+            $('.counter-3').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-4').addClass('!text-gray-500');
+            $('.counter-4').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-5').addClass('!text-gray-500');
+            $('.counter-5').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-6').addClass('!text-gray-500');
+            $('.counter-6').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-7').addClass('!text-gray-500');
+            $('.counter-7').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-8').addClass('!text-gray-500');
+            $('.counter-8').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-9').addClass('!text-gray-900');
+            $('.counter-9').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-10').addClass('!text-gray-900');
+            $('.counter-10').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            break;
+        case 4:
+            $('.button-1').addClass('d-none');
+            $('.button-1').removeClass('d-block');
+            $('.next-button').removeClass('d-none');
+            $('.next-button').addClass('d-flex');
+            $('.prev-button').removeClass('d-none');
+            $('.prev-button').addClass('d-flex');
+            $('.submit-button').addClass('d-none');
+            $('.step-1').removeClass('d-block');
+            $('.step-1').addClass('d-none');
+            $('.step-2').removeClass('d-block');
+            $('.step-2').addClass('d-none');
+            $('.step-3').removeClass('d-block');
+            $('.step-3').addClass('d-none');
+            $('.step-4').removeClass('d-none');
+            $('.step-4').addClass('d-block');
+            $('.step-5').addClass('d-none');
+            $('.step-6').addClass('d-none');
+            $('.step-7').addClass('d-none');
+            $('.step-8').addClass('d-none');
+            $('.step-9').addClass('d-none');
+            $('.step-10').addClass('d-none');
+            $('.nav-1').removeClass('text-pink-400');
+            $('.nav-1').addClass('!text-gray-400');
+            $('.nav-2').removeClass('text-pink-400');
+            $('.nav-2').addClass('!text-gray-400');
+            $('.nav-3').removeClass('!text-gray-400');
+            $('.nav-3').addClass('text-pink-400');
+            $('.nav-4').addClass('!text-gray-400');
+            $('.nav-5').addClass('!text-gray-400');
+            $('.nav-6').addClass('!text-gray-400');
+            $('.nav-7').addClass('!text-gray-400');
+            $('.nav-8').addClass('!text-gray-400');
+            $('.counter-1').removeClass('text-pink-500');
+            $('.counter-1').addClass('!text-gray-500');
+            $('.counter-1').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-2').removeClass('text-pink-500');
+            $('.counter-2').addClass('!text-gray-500');
+            $('.counter-2').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-3').removeClass('!text-gray-500');
+            $('.counter-3').addClass('text-pink-500');
+            $('.counter-3').attr('style', 'border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;');
+            $('.counter-4').addClass('!text-gray-500');
+            $('.counter-4').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-5').addClass('!text-gray-500');
+            $('.counter-5').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-6').addClass('!text-gray-500');
+            $('.counter-6').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-7').addClass('!text-gray-500');
+            $('.counter-7').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-8').addClass('!text-gray-500');
+            $('.counter-8').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-9').addClass('!text-gray-900');
+            $('.counter-9').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-10').addClass('!text-gray-900');
+            $('.counter-10').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            break;
+        case 5:
+            $('.button-1').addClass('d-none');
+            $('.button-1').removeClass('d-block');
+            $('.next-button').removeClass('d-none');
+            $('.next-button').addClass('d-flex');
+            $('.prev-button').removeClass('d-none');
+            $('.prev-button').addClass('d-flex');
+            $('.submit-button').addClass('d-none');
+            $('.step-1').removeClass('d-block');
+            $('.step-1').addClass('d-none');
+            $('.step-2').removeClass('d-block');
+            $('.step-2').addClass('d-none');
+            $('.step-3').removeClass('d-block');
+            $('.step-3').addClass('d-none');
+            $('.step-4').removeClass('d-block');
+            $('.step-4').addClass('d-none');
+            $('.step-5').removeClass('d-none');
+            $('.step-5').addClass('d-block');
+            $('.step-6').addClass('d-none');
+            $('.step-7').addClass('d-none');
+            $('.step-8').addClass('d-none');
+            $('.step-9').addClass('d-none');
+            $('.step-10').addClass('d-none');
+            $('.nav-1').removeClass('text-pink-400');
+            $('.nav-1').addClass('!text-gray-400');
+            $('.nav-2').removeClass('text-pink-400');
+            $('.nav-2').addClass('!text-gray-400');
+            $('.nav-3').removeClass('text-pink-400');
+            $('.nav-3').addClass('!text-gray-400');
+            $('.nav-4').removeClass('!text-gray-400');
+            $('.nav-4').addClass('text-pink-400');
+            $('.nav-5').addClass('!text-gray-400');
+            $('.nav-6').addClass('!text-gray-400');
+            $('.nav-7').addClass('!text-gray-400');
+            $('.nav-8').addClass('!text-gray-400');
+            $('.counter-1').removeClass('text-pink-500');
+            $('.counter-1').addClass('!text-gray-500');
+            $('.counter-1').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-2').removeClass('text-pink-500');
+            $('.counter-2').addClass('!text-gray-500');
+            $('.counter-2').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-3').removeClass('text-pink-500');
+            $('.counter-3').addClass('!text-gray-500');
+            $('.counter-3').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-4').removeClass('!text-gray-500');
+            $('.counter-4').addClass('text-pink-500');
+            $('.counter-4').attr('style', 'border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;');
+            $('.counter-5').addClass('!text-gray-500');
+            $('.counter-5').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-6').addClass('!text-gray-500');
+            $('.counter-6').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-7').addClass('!text-gray-500');
+            $('.counter-7').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-8').addClass('!text-gray-500');
+            $('.counter-8').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-9').addClass('!text-gray-900');
+            $('.counter-9').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-10').addClass('!text-gray-900');
+            $('.counter-10').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            break;
+        case 6:
+            $('.button-1').addClass('d-none');
+            $('.button-1').removeClass('d-block');
+            $('.next-button').removeClass('d-none');
+            $('.next-button').addClass('d-flex');
+            $('.prev-button').removeClass('d-none');
+            $('.prev-button').addClass('d-flex');
+            $('.submit-button').addClass('d-none');
+            $('.step-1').removeClass('d-block');
+            $('.step-1').addClass('d-none');
+            $('.step-2').removeClass('d-block');
+            $('.step-2').addClass('d-none');
+            $('.step-3').removeClass('d-block');
+            $('.step-3').addClass('d-none');
+            $('.step-4').removeClass('d-block');
+            $('.step-4').addClass('d-none');
+            $('.step-5').removeClass('d-block');
+            $('.step-5').addClass('d-none');
+            $('.step-6').removeClass('d-none');
+            $('.step-6').addClass('d-block');
+            $('.step-7').addClass('d-none');
+            $('.step-8').addClass('d-none');
+            $('.step-9').addClass('d-none');
+            $('.step-10').addClass('d-none');
+            $('.nav-1').removeClass('text-pink-400');
+            $('.nav-1').addClass('!text-gray-400');
+            $('.nav-2').removeClass('text-pink-400');
+            $('.nav-2').addClass('!text-gray-400');
+            $('.nav-3').removeClass('text-pink-400');
+            $('.nav-3').addClass('!text-gray-400');
+            $('.nav-4').removeClass('text-pink-400');
+            $('.nav-4').addClass('!text-gray-400');
+            $('.nav-5').removeClass('!text-gray-400');
+            $('.nav-5').addClass('text-pink-500');
+            $('.nav-6').addClass('!text-gray-400');
+            $('.nav-7').addClass('!text-gray-400');
+            $('.nav-8').addClass('!text-gray-400');
+            $('.counter-1').removeClass('text-pink-500');
+            $('.counter-1').addClass('!text-gray-500');
+            $('.counter-1').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-2').removeClass('text-pink-500');
+            $('.counter-2').addClass('!text-gray-500');
+            $('.counter-2').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-3').removeClass('text-pink-500');
+            $('.counter-3').addClass('!text-gray-500');
+            $('.counter-3').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-4').removeClass('text-pink-500');
+            $('.counter-4').addClass('!text-gray-500');
+            $('.counter-4').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-5').removeClass('!text-gray-500');
+            $('.counter-5').addClass('text-pink-500');
+            $('.counter-5').attr('style', 'border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;');
+            $('.counter-6').addClass('!text-gray-500');
+            $('.counter-6').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-7').addClass('!text-gray-500');
+            $('.counter-7').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-8').addClass('!text-gray-500');
+            $('.counter-8').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-9').addClass('!text-gray-900');
+            $('.counter-9').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-10').addClass('!text-gray-900');
+            $('.counter-10').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            break;
+        case 7:
+            $('.button-1').addClass('d-none');
+            $('.button-1').removeClass('d-block');
+            $('.next-button').removeClass('d-none');
+            $('.next-button').addClass('d-flex');
+            $('.prev-button').removeClass('d-none');
+            $('.prev-button').addClass('d-flex');
+            $('.submit-button').addClass('d-none');
+            $('.step-1').removeClass('d-block');
+            $('.step-1').addClass('d-none');
+            $('.step-2').removeClass('d-block');
+            $('.step-2').addClass('d-none');
+            $('.step-3').removeClass('d-block');
+            $('.step-3').addClass('d-none');
+            $('.step-4').removeClass('d-block');
+            $('.step-4').addClass('d-none');
+            $('.step-5').removeClass('d-block');
+            $('.step-5').addClass('d-none');
+            $('.step-6').removeClass('d-block');
+            $('.step-6').addClass('d-none');
+            $('.step-7').removeClass('d-none');
+            $('.step-7').addClass('d-block');
+            $('.step-8').addClass('d-none');
+            $('.step-9').addClass('d-none');
+            $('.step-10').addClass('d-none');
+            $('.nav-1').removeClass('text-pink-400');
+            $('.nav-1').addClass('!text-gray-400');
+            $('.nav-2').removeClass('text-pink-400');
+            $('.nav-2').addClass('!text-gray-400');
+            $('.nav-3').removeClass('text-pink-400');
+            $('.nav-3').addClass('!text-gray-400');
+            $('.nav-4').removeClass('text-pink-400');
+            $('.nav-4').addClass('!text-gray-400');
+            $('.nav-5').removeClass('!text-gray-400');
+            $('.nav-5').addClass('text-pink-500');
+            $('.nav-6').addClass('!text-gray-400');
+            $('.nav-7').addClass('!text-gray-400');
+            $('.nav-8').addClass('!text-gray-400');
+            $('.counter-1').removeClass('text-pink-500');
+            $('.counter-1').addClass('!text-gray-500');
+            $('.counter-1').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-2').removeClass('text-pink-500');
+            $('.counter-2').addClass('!text-gray-500');
+            $('.counter-2').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-3').removeClass('text-pink-500');
+            $('.counter-3').addClass('!text-gray-500');
+            $('.counter-3').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-4').removeClass('text-pink-500');
+            $('.counter-4').addClass('!text-gray-500');
+            $('.counter-4').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-5').removeClass('!text-gray-500');
+            $('.counter-5').addClass('text-pink-500');
+            $('.counter-5').attr('style', 'border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;');
+            $('.counter-6').addClass('!text-gray-500');
+            $('.counter-6').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-7').addClass('!text-gray-500');
+            $('.counter-7').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-8').addClass('!text-gray-500');
+            $('.counter-8').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-9').addClass('!text-gray-900');
+            $('.counter-9').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-10').addClass('!text-gray-900');
+            $('.counter-10').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            break;
+        case 8:
+            $('.button-1').addClass('d-none');
+            $('.button-1').removeClass('d-block');
+            $('.next-button').removeClass('d-none');
+            $('.next-button').addClass('d-flex');
+            $('.prev-button').removeClass('d-none');
+            $('.prev-button').addClass('d-flex');
+            $('.submit-button').addClass('d-none');
+            $('.step-1').removeClass('d-block');
+            $('.step-1').addClass('d-none');
+            $('.step-2').removeClass('d-block');
+            $('.step-2').addClass('d-none');
+            $('.step-3').removeClass('d-block');
+            $('.step-3').addClass('d-none');
+            $('.step-4').removeClass('d-block');
+            $('.step-4').addClass('d-none');
+            $('.step-5').removeClass('d-block');
+            $('.step-5').addClass('d-none');
+            $('.step-6').removeClass('d-block');
+            $('.step-6').addClass('d-none');
+            $('.step-7').removeClass('d-block');
+            $('.step-7').addClass('d-none');
+            $('.step-8').removeClass('d-none');
+            $('.step-8').addClass('d-block');
+            $('.step-9').addClass('d-none');
+            $('.step-10').addClass('d-none');
+            $('.nav-1').removeClass('text-pink-400');
+            $('.nav-1').addClass('!text-gray-400');
+            $('.nav-2').removeClass('text-pink-400');
+            $('.nav-2').addClass('!text-gray-400');
+            $('.nav-3').removeClass('text-pink-400');
+            $('.nav-3').addClass('!text-gray-400');
+            $('.nav-4').removeClass('text-pink-400');
+            $('.nav-4').addClass('!text-gray-400');
+            $('.nav-5').removeClass('text-pink-500');
+            $('.nav-5').addClass('!text-gray-400');
+            $('.nav-6').removeClass('!text-gray-400');
+            $('.nav-6').addClass('text-pink-500');
+            $('.nav-7').addClass('!text-gray-400');
+            $('.nav-8').addClass('!text-gray-400');
+            $('.counter-1').removeClass('text-pink-500');
+            $('.counter-1').addClass('!text-gray-500');
+            $('.counter-1').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-2').removeClass('text-pink-500');
+            $('.counter-2').addClass('!text-gray-500');
+            $('.counter-2').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-3').removeClass('text-pink-500');
+            $('.counter-3').addClass('!text-gray-500');
+            $('.counter-3').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-4').removeClass('text-pink-500');
+            $('.counter-4').addClass('!text-gray-500');
+            $('.counter-4').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-5').removeClass('text-pink-500');
+            $('.counter-5').addClass('!text-gray-500');
+            $('.counter-5').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-6').removeClass('!text-gray-500');
+            $('.counter-6').addClass('text-pink-500');
+            $('.counter-6').attr('style', 'border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;');
+            $('.counter-7').addClass('!text-gray-500');
+            $('.counter-7').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-8').addClass('!text-gray-500');
+            $('.counter-8').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-9').addClass('!text-gray-900');
+            $('.counter-9').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-10').addClass('!text-gray-900');
+            $('.counter-10').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            break;
+        case 9:
+            $('.button-1').addClass('d-none');
+            $('.button-1').removeClass('d-block');
+            $('.next-button').removeClass('d-none');
+            $('.next-button').addClass('d-flex');
+            $('.prev-button').removeClass('d-none');
+            $('.prev-button').addClass('d-flex');
+            $('.submit-button').addClass('d-none');
+            $('.step-1').removeClass('d-block');
+            $('.step-1').addClass('d-none');
+            $('.step-2').removeClass('d-block');
+            $('.step-2').addClass('d-none');
+            $('.step-3').removeClass('d-block');
+            $('.step-3').addClass('d-none');
+            $('.step-4').removeClass('d-block');
+            $('.step-4').addClass('d-none');
+            $('.step-5').removeClass('d-block');
+            $('.step-5').addClass('d-none');
+            $('.step-6').removeClass('d-block');
+            $('.step-6').addClass('d-none');
+            $('.step-7').removeClass('d-block');
+            $('.step-7').addClass('d-none');
+            $('.step-8').removeClass('d-block');
+            $('.step-8').addClass('d-none');
+            $('.step-9').removeClass('d-none');
+            $('.step-9').addClass('d-block');
+            $('.step-10').addClass('d-none');
+            $('.nav-1').removeClass('text-pink-400');
+            $('.nav-1').addClass('!text-gray-400');
+            $('.nav-2').removeClass('text-pink-400');
+            $('.nav-2').addClass('!text-gray-400');
+            $('.nav-3').removeClass('text-pink-400');
+            $('.nav-3').addClass('!text-gray-400');
+            $('.nav-4').removeClass('text-pink-400');
+            $('.nav-4').addClass('!text-gray-400');
+            $('.nav-5').removeClass('text-pink-500');
+            $('.nav-5').addClass('!text-gray-400');
+            $('.nav-6').removeClass('text-pink-500');
+            $('.nav-6').addClass('!text-gray-400');
+            $('.nav-7').removeClass('!text-gray-400');
+            $('.nav-7').addClass('text-pink-500');
+            $('.nav-8').addClass('!text-gray-400');
+            $('.counter-1').removeClass('text-pink-500');
+            $('.counter-1').addClass('!text-gray-500');
+            $('.counter-1').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-2').removeClass('text-pink-500');
+            $('.counter-2').addClass('!text-gray-500');
+            $('.counter-2').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-3').removeClass('text-pink-500');
+            $('.counter-3').addClass('!text-gray-500');
+            $('.counter-3').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-4').removeClass('text-pink-500');
+            $('.counter-4').addClass('!text-gray-500');
+            $('.counter-4').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-5').removeClass('text-pink-500');
+            $('.counter-5').addClass('!text-gray-500');
+            $('.counter-5').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-6').removeClass('text-pink-500');
+            $('.counter-6').addClass('!text-gray-500');
+            $('.counter-6').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-7').removeClass('!text-gray-500');
+            $('.counter-7').addClass('text-pink-500');
+            $('.counter-7').attr('style', 'border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;');
+            $('.counter-8').addClass('!text-gray-500');
+            $('.counter-8').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-9').addClass('!text-gray-900');
+            $('.counter-9').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-10').addClass('!text-gray-900');
+            $('.counter-10').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            break;
+        case 10:
+            $('.button-1').addClass('d-none');
+            $('.button-1').removeClass('d-block');
+            $('.next-button').removeClass('d-flex');
+            $('.next-button').addClass('d-none');
+            $('.prev-button').removeClass('d-none');
+            $('.prev-button').addClass('d-flex');
+            $('.submit-button').removeClass('d-none');
+            $('.submit-button').addClass('d-block');
+            $('.step-1').removeClass('d-block');
+            $('.step-1').addClass('d-none');
+            $('.step-2').removeClass('d-block');
+            $('.step-2').addClass('d-none');
+            $('.step-3').removeClass('d-block');
+            $('.step-3').addClass('d-none');
+            $('.step-4').removeClass('d-block');
+            $('.step-4').addClass('d-none');
+            $('.step-5').removeClass('d-block');
+            $('.step-5').addClass('d-none');
+            $('.step-6').removeClass('d-block');
+            $('.step-6').addClass('d-none');
+            $('.step-7').removeClass('d-block');
+            $('.step-7').addClass('d-none');
+            $('.step-8').removeClass('d-block');
+            $('.step-8').addClass('d-none');
+            $('.step-9').removeClass('d-block');
+            $('.step-9').addClass('d-none');
+            $('.step-10').removeClass('d-none');
+            $('.step-10').addClass('d-block');
+            $('.nav-1').removeClass('text-pink-400');
+            $('.nav-1').addClass('!text-gray-400');
+            $('.nav-2').removeClass('text-pink-400');
+            $('.nav-2').addClass('!text-gray-400');
+            $('.nav-3').removeClass('text-pink-400');
+            $('.nav-3').addClass('!text-gray-400');
+            $('.nav-4').removeClass('text-pink-400');
+            $('.nav-4').addClass('!text-gray-400');
+            $('.nav-5').removeClass('text-pink-500');
+            $('.nav-5').addClass('!text-gray-400');
+            $('.nav-6').removeClass('text-pink-500');
+            $('.nav-6').addClass('!text-gray-400');
+            $('.nav-7').removeClass('text-pink-500');
+            $('.nav-7').addClass('!text-gray-400');
+            $('.nav-8').removeClass('!text-gray-400');
+            $('.nav-8').addClass('text-pink-500');
+            $('.counter-1').removeClass('text-pink-500');
+            $('.counter-1').addClass('!text-gray-500');
+            $('.counter-1').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-2').removeClass('text-pink-500');
+            $('.counter-2').addClass('!text-gray-500');
+            $('.counter-2').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-3').removeClass('text-pink-500');
+            $('.counter-3').addClass('!text-gray-500');
+            $('.counter-3').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-4').removeClass('text-pink-500');
+            $('.counter-4').addClass('!text-gray-500');
+            $('.counter-4').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-5').removeClass('text-pink-500');
+            $('.counter-5').addClass('!text-gray-500');
+            $('.counter-5').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-6').removeClass('text-pink-500');
+            $('.counter-6').addClass('!text-gray-500');
+            $('.counter-6').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-7').removeClass('text-pink-500');
+            $('.counter-7').addClass('!text-gray-500');
+            $('.counter-7').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
+            $('.counter-8').removeClass('!text-gray-500');
+            $('.counter-8').addClass('text-pink-500');
+            $('.counter-8').attr('style', 'border-color: rgb(236 72 153 / var(--tw-text-opacity)) !important;');
+            break;
+        default:
+            break;
+    }
+
+}
+
+counter();
+
+$('.next-button').on('click', function() {
+    
+    switch (count) {
+        case 1:
+            validate_step_1();
+            break;
+        case 2:
+            validate_step_2();
+            break;
+        case 3:
+            validate_step_3();
+            break;
+        case 4:
+            validate_step_4();
+            break;
+        case 5:
+            validate_step_5();
+            break;
+        case 6:
+            validate_step_6();
+            break;
+        case 7:
+            validate_step_7();
+            break;
+        case 8:
+            validate_step_8();
+            break;
+        case 9:
+            validate_step_9();
+            break;
+        default:
+            break;
+    }
+});
+
+$('.prev-button').on('click', function() {
+    count--;
+    counter();
+});
+
+$('.submit-button').on('click', function() {
+    if(count == 10) {
+        validate_step_10();
+    }
+});
+
+var validate_step_1 = () => {
+    var data = {
+        'surname': $('.pi_surname').val(),
+        'firstname': $('.pi_firstname').val(),
+        'middlename': $('.pi_middlename').val(),
+        'suffix': $('.pi_suffix').val(),
+        'birthdate': $('.pi_date_of_birth').val(),
+        'civil_status': $('.pi_civil_status').val(),
+        'height': $('.pi_height').val(),
+        'religion': $('.pi_religion').val(),
+        'sex': $('.pi_sex').val(),
+        'is_actively_looking_for_work': $('.pi_looking_for_work').val(),
+        'find_job_duration': $('.pi_is_actively_looking_for_work').val(),
+        'is_willing_to_work_immidiately': $('.pi_when_to_work').val(),
+        'when_to_start_working': $('.pi_not_when_to_work').val(),
+        'is_4Ps': $('.pi_4ps_beneficiary').val(),
+        'household_id_4ps': $('.pi_4ps_household_id').val(),
+        'pob_province': $('.pob_province :selected').text(),
+        'pob_city': $('.pob_city :selected').text(),
+        'pob_barangay': $('.pob_barangay :selected').text(),
+        'pop_street': $('.pop_street').val(),
+        'pa_province': $('.pob_province :selected').text(),
+        'pa_city': $('.pob_city :selected').text(),
+        'pa_barangay': $('.pob_barangay :selected').text(),
+        'pa_street': $('.pa_street').val(),
+    }
+
+    $.ajax({
+        type: 'POST',
+        url: "/api/v2/applicant-validator/step-1",
+        data: data,
+        dataType: 'json',
+        success: function(response) {
+            console.log(data);
+            console.log(response);
+            if(response.status == 400) {
+                if(typeof response.errors.surname !== 'undefined') {
+                    $.each(response.errors.surname, function(key, err_values) {
+                        $('.pi_surname-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.firstname !== 'undefined') {
+                    $.each(response.errors.firstname, function(key, err_values) {
+                        $('.pi_firstname-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.middlename !== 'undefined') {
+                    $.each(response.errors.middlename, function(key, err_values) {
+                        $('.pi_middlename-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.suffix !== 'undefined') {
+                    $.each(response.errors.suffix, function(key, err_values) {
+                        $('.pi_suffix-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.birthdate !== 'undefined') {
+                    $.each(response.errors.birthdate, function(key, err_values) {
+                        $('.pi_date_of_birth-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.civil_status !== 'undefined') {
+                    $.each(response.errors.civil_status, function(key, err_values) {
+                        $('.pi_civil_status-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.height !== 'undefined') {
+                    $.each(response.errors.height, function(key, err_values) {
+                        $('.pi_height-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.religion !== 'undefined') {
+                    $.each(response.errors.religion, function(key, err_values) {
+                        $('.pi_religion-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.sex !== 'undefined') {
+                    $.each(response.errors.sex, function(key, err_values) {
+                        $('.pi_sex-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.is_actively_looking_for_work !== 'undefined') {
+                    $.each(response.errors.is_actively_looking_for_work, function(key, err_values) {
+                        $('.pi_looking_for_work-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.find_job_duration !== 'undefined') {
+                    $.each(response.errors.find_job_duration, function(key, err_values) {
+                        $('.pi_is_actively_looking_for_work-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.is_willing_to_work_immidiately !== 'undefined') {
+                    $.each(response.errors.is_willing_to_work_immidiately, function(key, err_values) {
+                        $('.pi_when_to_work-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.when_to_start_working !== 'undefined') {
+                    $.each(response.errors.when_to_start_working, function(key, err_values) {
+                        $('.pi_not_when_to_work-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.is_4Ps !== 'undefined') {
+                    $.each(response.errors.is_4Ps, function(key, err_values) {
+                        $('.pi_4ps_beneficiary-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.household_id_4ps !== 'undefined') {
+                    $.each(response.errors.household_id_4ps, function(key, err_values) {
+                        $('.pi_4ps_household_id-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.pob_province !== 'undefined') {
+                    $.each(response.errors.pob_province, function(key, err_values) {
+                        $('.pob_province-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.pob_city !== 'undefined') {
+                    $.each(response.errors.pob_city, function(key, err_values) {
+                        $('.pob_city-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.pob_barangay !== 'undefined') {
+                    $.each(response.errors.pob_barangay, function(key, err_values) {
+                        $('.pob_barangay-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.pop_street !== 'undefined') {
+                    $.each(response.errors.pop_street, function(key, err_values) {
+                        $('.pop_street-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.pa_province !== 'undefined') {
+                    $.each(response.errors.pa_province, function(key, err_values) {
+                        $('.pa_province-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.pa_city !== 'undefined') {
+                    $.each(response.errors.pa_city, function(key, err_values) {
+                        $('.pa_city-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.pa_barangay !== 'undefined') {
+                    $.each(response.errors.pa_barangay, function(key, err_values) {
+                        $('.pa_barangay-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.pa_street !== 'undefined') {
+                    $.each(response.errors.pa_street, function(key, err_values) {
+                        $('.pa_street-error').text(err_values);
+                    });
+                }
+
+            }
+            else {
+                count++;
+                counter();
+            }
+        }
+    });
+}
+
+var validate_step_2 = () => {
+    var data = {
+        'email_address': $('.pi_email_address').val(),
+        'phone_number': $('.pi_celphone_number').val(),
+        'landline_number': $('.pi_landine_number').val(),
+        'GSIS_SSS_id': $('.pi_sss_number').val(),
+        'pag_ibig_number': $('.pi_pag_ibig_number').val(),
+        'philhealth_id': $('.pi_philheath_number').val(),
+        'disability': $('.pi_disability').val(),
+        'employed': $('.pi_employed').val(),
+        'employed_status': $('.pi_employed_status').val(),
+        'unemployed_status': $('.pi_unemployed_status').val(),
+    }
+
+    $.ajax({
+        type: 'POST',
+        url: "/api/v2/applicant-validator/step-2",
+        data: data,
+        dataType: 'json',
+        success: function(response) {
+            console.log(data);
+            console.log(response);
+            if(response.status == 400) {
+                if(typeof response.errors.email_address !== 'undefined') {
+                    $.each(response.errors.email_address, function(key, err_values) {
+                        $('.pi_email_address-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.phone_number !== 'undefined') {
+                    $.each(response.errors.phone_number, function(key, err_values) {
+                        $('.pi_celphone_number-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.landline_number !== 'undefined') {
+                    $.each(response.errors.landline_number, function(key, err_values) {
+                        $('.pi_landine_number-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.GSIS_SSS_id !== 'undefined') {
+                    $.each(response.errors.GSIS_SSS_id, function(key, err_values) {
+                        $('.pi_sss_number-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.pag_ibig_number !== 'undefined') {
+                    $.each(response.errors.pag_ibig_number, function(key, err_values) {
+                        $('.pi_pag_ibig_number-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.philhealth_id !== 'undefined') {
+                    $.each(response.errors.philhealth_id, function(key, err_values) {
+                        $('.pi_philheath_number-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.disability !== 'undefined') {
+                    $.each(response.errors.disability, function(key, err_values) {
+                        $('.disability-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.employed !== 'undefined') {
+                    $.each(response.errors.employed, function(key, err_values) {
+                        $('.pi_employed-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.employed_status !== 'undefined') {
+                    $.each(response.errors.employed_status, function(key, err_values) {
+                        $('.pi_employed_status-error').text(err_values);
+                    });
+                }
+
+                if(typeof response.errors.unemployed_status !== 'undefined') {
+                    $.each(response.errors.unemployed_status, function(key, err_values) {
+                        $('.pi_unemployed_status-error').text(err_values);
+                    });
+                }
+            }
+            else {
+                count++;
+                counter();
+            }
+        }
+    });
+}
+
+var validate_step_3 = () => {
+    var data = {
+        'occupation1': $('.preferred_occupation')[0].value,
+        'occupation2': $('.preferred_occupation')[1].value,
+        'occupation3': $('.preferred_occupation')[2].value,
+        'occupation4': $('.preferred_occupation')[3].value,
+        'islocal_preferred_work_location1': $('.islocal_preferred_work_location')[0].value,
+        'islocal_preferred_work_location2': $('.islocal_preferred_work_location')[1].value,
+        'islocal_preferred_work_location3': $('.islocal_preferred_work_location')[2].value,
+        'isoverseas_preferred_work_location1': $('.isoverseas_preferred_work_location')[0].value,
+        'isoverseas_preferred_work_location2': $('.isoverseas_preferred_work_location')[1].value,
+        'isoverseas_preferred_work_location3': $('.isoverseas_preferred_work_location')[2].value,
+        'expected_salary': $('.expected_salary').val(),
+        'passport_number': $('.passport_number').val(),
+        'date_expiration': $('.expiry_date').val(),
+    }
+
+    console.log(data);
+}
+
+var validate_step_4 = () => {
+    var data = {
+
+    }
+}
+
+var validate_step_5 = () => {
+
+}
+
+var validate_step_6 = () => {
+
+}
+
+var validate_step_7 = () => {
+
+}
+
+var validate_step_8 = () => {
+
+}
+
+var validate_step_9 = () => {
+
+}
+
+var validate_step_10 = () => {
+
+}
