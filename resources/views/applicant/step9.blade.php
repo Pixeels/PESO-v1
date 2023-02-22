@@ -225,7 +225,7 @@
                 </div>
                 <div class="col-md-4">
                     <input type="input" placeholder="Others: "
-                            class="form-control osawft !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                            class="form-control osawft-others !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
                 </div>
             </div>
         </div>

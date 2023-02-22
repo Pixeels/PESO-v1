@@ -1138,7 +1138,27 @@ var validate_step_3 = () => {
         'date_expiration': $('.expiry_date').val(),
     }
 
-    console.log(data);
+    $.ajax({
+        type: 'POST',
+        url: "/api/v2/applicant-validator/step-3",
+        data: data,
+        dataType: 'json',
+        success: function(response) {
+            if(response.status == 400) {
+                // if(typeof response.errors.email_address !== 'undefined') {
+                //     $.each(response.errors.email_address, function(key, err_values) {
+                //         $('.pi_email_address-error').text(err_values);
+                //     });
+                // }
+
+                console.log(response);
+            }
+            else {
+                count++;
+                counter();
+            }
+        }
+    });
 }
 
 var validate_step_4 = () => {
@@ -1156,35 +1176,82 @@ var validate_step_4 = () => {
         'is_can_speak_others': $('.is_can_speak_others').val(),
         'is_can_understand_others': $('.is_can_understand_others').val(),
     }
+
+    $.ajax({
+        type: 'POST',
+        url: "/api/v2/applicant-validator/step-4",
+        data: data,
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);
+
+            if(response.status == 400) {
+                // if(typeof response.errors.email_address !== 'undefined') {
+                //     $.each(response.errors.email_address, function(key, err_values) {
+                //         $('.pi_email_address-error').text(err_values);
+                //     });
+                // }
+
+                console.log(response);
+            }
+            else {
+                count++;
+                counter();
+            }
+        }
+    });
 }
 
 var validate_step_5 = () => {
     var data = {
-        'elementary_school': $('.elementary_school'),
-        'elementary_course': $('.elementary_course'),
-        'elementary_year_graduated': $('.elementary_year_graduated'),
-        'elementary_undergraduate_level': $('.elementary_undergraduate_level'),
-        'elementary_undergraduate_last_attended': $('.elementary_undergraduate_last_attended'),
-        'elementary_awards_recieved': $('.elementary_awards_recieved'),
-        'secondary_school': $('.secondary_school'),
-        'secondary_course': $('.secondary_course'),
-        'secondary_year_graduated': $('.secondary_year_graduated'),
-        'secondary_undergraduate_level': $('.secondary_undergraduate_level'),
-        'secondary_undergraduate_last_attended': $('.secondary_undergraduate_last_attended'),
-        'secondary_awards_recieved': $('.secondary_awards_recieved'),
-        'tertiary_school': $('.tertiary_school'),
-        'tertiary_course': $('.tertiary_course'),
-        'tertiary_year_graduated': $('.tertiary_year_graduated'),
-        'tertiary_undergraduate_level': $('.tertiary_undergraduate_level'),
-        'tertiary_undergraduate_last_attended': $('.tertiary_undergraduate_last_attended'),
-        'tertiary_awards_recieved': $('.tertiary_awards_recieved'),
-        'graduate_school': $('.graduate_school'),
-        'graduate_course': $('.graduate_course'),
-        'graduate_year_graduated': $('.graduate_year_graduated'),
-        'graduate_undergraduate_level': $('.graduate_undergraduate_level'),
-        'graduate_last_attendend': $('.graduate_last_attendend'),
-        'graduate_awards_recieved': $('.graduate_awards_recieved'),
+        'elementary_school': $('.elementary_school').val(),
+        'elementary_course': $('.elementary_course').val(),
+        'elementary_year_graduated': $('.elementary_year_graduated').val(),
+        'elementary_undergraduate_level': $('.elementary_undergraduate_level').val(),
+        'elementary_undergraduate_last_attended': $('.elementary_undergraduate_last_attended').val(),
+        'elementary_awards_recieved': $('.elementary_awards_recieved').val(),
+        'secondary_school': $('.secondary_school').val(),
+        'secondary_course': $('.secondary_course').val(),
+        'secondary_year_graduated': $('.secondary_year_graduated').val(),
+        'secondary_undergraduate_level': $('.secondary_undergraduate_level').val(),
+        'secondary_undergraduate_last_attended': $('.secondary_undergraduate_last_attended').val(),
+        'secondary_awards_recieved': $('.secondary_awards_recieved').val(),
+        'tertiary_school': $('.tertiary_school').val(),
+        'tertiary_course': $('.tertiary_course').val(),
+        'tertiary_year_graduated': $('.tertiary_year_graduated').val(),
+        'tertiary_undergraduate_level': $('.tertiary_undergraduate_level').val(),
+        'tertiary_undergraduate_last_attended': $('.tertiary_undergraduate_last_attended').val(),
+        'tertiary_awards_recieved': $('.tertiary_awards_recieved').val(),
+        'graduate_school': $('.graduate_school').val(),
+        'graduate_course': $('.graduate_course').val(),
+        'graduate_year_graduated': $('.graduate_year_graduated').val(),
+        'graduate_undergraduate_level': $('.graduate_undergraduate_level').val(),
+        'graduate_last_attendend': $('.graduate_last_attendend').val(),
+        'graduate_awards_recieved': $('.graduate_awards_recieved').val(),
     }
+
+    $.ajax({
+        type: 'POST',
+        url: "/api/v2/applicant-validator/step-5",
+        data: data,
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);
+
+            if(response.status == 400) {
+                // if(typeof response.errors.email_address !== 'undefined') {
+                //     $.each(response.errors.email_address, function(key, err_values) {
+                //         $('.pi_email_address-error').text(err_values);
+                //     });
+                // }
+
+            }
+            else {
+                count++;
+                counter();
+            }
+        }
+    });
 }
 
 var validate_step_6 = () => {
@@ -1205,6 +1272,28 @@ var validate_step_6 = () => {
         'technical_course_training_instituition_3' : $('.technical_course_training_instituition_3').val(),
         'technical_course_certificates_recieved_3' : $('.technical_course_certificates_recieved_3').val(),
     }
+
+    $.ajax({
+        type: 'POST',
+        url: "/api/v2/applicant-validator/step-6",
+        data: data,
+        dataType: 'json',
+        success: function(response) {
+            if(response.status == 400) {
+                // if(typeof response.errors.email_address !== 'undefined') {
+                //     $.each(response.errors.email_address, function(key, err_values) {
+                //         $('.pi_email_address-error').text(err_values);
+                //     });
+                // }
+
+                console.log(response);
+            }
+            else {
+                count++;
+                counter();
+            }
+        }
+    });
 }
 
 var validate_step_7 = () => {
@@ -1220,6 +1309,28 @@ var validate_step_7 = () => {
         'prc_name_2' : $('.prc_name_2').val(),
         'prc_valid_until_2' : $('.prc_valid_until_2').val(),
     }
+
+    $.ajax({
+        type: 'POST',
+        url: "/api/v2/applicant-validator/step-7",
+        data: data,
+        dataType: 'json',
+        success: function(response) {
+            if(response.status == 400) {
+                // if(typeof response.errors.email_address !== 'undefined') {
+                //     $.each(response.errors.email_address, function(key, err_values) {
+                //         $('.pi_email_address-error').text(err_values);
+                //     });
+                // }
+
+                console.log(response);
+            }
+            else {
+                count++;
+                counter();
+            }
+        }
+    });
 }
 
 var validate_step_8 = () => {
@@ -1250,14 +1361,65 @@ var validate_step_8 = () => {
         'work_experience_company_inclusive_date_5': $('.work_experience_company_inclusive_date_5').val(),
         'work_experience_company_status_5': $('.work_experience_company_status_5').val(),
     }
+
+    $.ajax({
+        type: 'POST',
+        url: "/api/v2/applicant-validator/step-8",
+        data: data,
+        dataType: 'json',
+        success: function(response) {
+            if(response.status == 400) {
+                // if(typeof response.errors.email_address !== 'undefined') {
+                //     $.each(response.errors.email_address, function(key, err_values) {
+                //         $('.pi_email_address-error').text(err_values);
+                //     });
+                // }
+
+                console.log(response);
+            }
+            else {
+                count++;
+                counter();
+            }
+        }
+    });
 }
 
 var validate_step_9 = () => {
-    // var data = {
 
-    // }
+    var skills = '';
+    $('input[name="osawft"]:checked').each(function(index, element) {
+        skills += element.value+', ';
+    });
 
-    console.log($('.osawft').val());
+    skills += $('.osawft-others').val();
+
+    var data = {
+        'skills': skills
+    }
+
+    $.ajax({
+        type: 'POST',
+        url: "/api/v2/applicant-validator/step-9",
+        data: data,
+        dataType: 'json',
+        success: function(response) {
+            if(response.status == 400) {
+                // if(typeof response.errors.email_address !== 'undefined') {
+                //     $.each(response.errors.email_address, function(key, err_values) {
+                //         $('.pi_email_address-error').text(err_values);
+                //     });
+                // }
+
+                console.log(response);
+            }
+            else {
+                count++;
+                counter();
+            }
+        }
+    });
+
 }
 
 var validate_step_10 = () => {
