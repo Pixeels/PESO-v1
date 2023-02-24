@@ -165,7 +165,7 @@
             </div>
             <div class="col-md-12 mb-4">
                 <label for="inputEmail4"
-                    class="form-label !text-xs !text-gray-400 fw-bold text-light-emphasis line-of-bir">Line
+                    class="form-label !text-xs !text-gray-400 fw-bold text-light-emphasis">Line
                     of Business/Industry (check BIR 2303):
                 </label>
                 <input type="input"

@@ -1,4 +1,4 @@
-$('.disability').on('change', function() {
+$('.disability').on('change', function () {
     if ($(this).val() == 4) {
         $(this).after("<input type='text' placeholder='Please specifiy here...' class='form-control disability-others mt-2 !text-xs !py-2.5 !text-gray-500 border-light-emphasis'\
                                     id='inputEmail4'>");
@@ -8,7 +8,7 @@ $('.disability').on('change', function() {
     }
 });
 
-$('.employed').on('change', function() {
+$('.employed').on('change', function () {
     if ($('.employed').is(':checked')) {
         $('.employed-status').removeClass('d-none');
         if (!$('.unemployed-status').hasClass('d-none')) {
@@ -17,7 +17,7 @@ $('.employed').on('change', function() {
     }
 });
 
-$('.unemployed').on('change', function() {
+$('.unemployed').on('change', function () {
     if ($('.unemployed').is(':checked')) {
         $('.unemployed-status').removeClass('d-none');
         if (!$('.employed-status').hasClass('d-none')) {
@@ -28,43 +28,43 @@ $('.unemployed').on('change', function() {
 
 
 
-$('.yes_actively_looking_for_work').on('change', function() {
+$('.yes_actively_looking_for_work').on('change', function () {
     if ($('.yes_actively_looking_for_work').is(':checked')) {
         $('.is_actively_looking_for_work').removeClass('d-none');
     }
 });
 
-$('.not_actively_looking_for_work').on('change', function() {
+$('.not_actively_looking_for_work').on('change', function () {
     if ($('.not_actively_looking_for_work').is(':checked')) {
         $('.is_actively_looking_for_work').addClass('d-none');
     }
 });
 
-$('.yes_when_to_work').on('change', function() {
+$('.yes_when_to_work').on('change', function () {
     if ($('.yes_when_to_work').is(':checked')) {
         $('.is_not_when_to_work').addClass('d-none');
     }
 });
 
-$('.no_when_to_work').on('change', function() {
+$('.no_when_to_work').on('change', function () {
     if ($('.no_when_to_work').is(':checked')) {
         $('.is_not_when_to_work').removeClass('d-none');
     }
 });
 
-$('.yes_4ps_beneficiary').on('change', function() {
+$('.yes_4ps_beneficiary').on('change', function () {
     if ($('.yes_4ps_beneficiary').is(':checked')) {
         $('.is_4ps_beneficiary').removeClass('d-none');
     }
 });
 
-$('.no_4ps_beneficiary').on('change', function() {
+$('.no_4ps_beneficiary').on('change', function () {
     if ($('.no_4ps_beneficiary').is(':checked')) {
         $('.is_4ps_beneficiary').addClass('d-none');
     }
 });
 
-$('.unemployed-status-select').on('change', function() {
+$('.unemployed-status-select').on('change', function () {
     if ($(this).val() == 7) {
         $(this).after("<input type='text' placeholder='Please specifiy here...' class='form-control mt-2 !text-xs !py-2.5 !text-gray-500 border-light-emphasis'\
                                     id='inputEmail4'>");
@@ -74,14 +74,14 @@ $('.unemployed-status-select').on('change', function() {
 
 });
 
-$('.local_preferred_work_location').on('change', function() {
+$('.local_preferred_work_location').on('change', function () {
     if ($(this).is(':checked')) {
         $('.islocal_preferred_work_location').removeAttr('disabled');
     }
 
 });
 
-$('.overseas_preferred_work_location').on('change', function() {
+$('.overseas_preferred_work_location').on('change', function () {
     if ($(this).is(':checked')) {
         $('.isoverseas_preferred_work_location').removeAttr('disabled');
     }
@@ -90,7 +90,7 @@ $('.overseas_preferred_work_location').on('change', function() {
 
 var my_handlers = {
 
-    fill_pob_provinces: function() {
+    fill_pob_provinces: function () {
 
         var region_code = $(this).val();
         $('.pob_province').ph_locations('fetch_list', [{
@@ -98,7 +98,7 @@ var my_handlers = {
         }]);
     },
 
-    fill_pob_cities: function() {
+    fill_pob_cities: function () {
 
         var province_code = $(this).val();
         $('.pob_city').ph_locations('fetch_list', [{
@@ -107,7 +107,7 @@ var my_handlers = {
     },
 
 
-    fill_pob_barangays: function() {
+    fill_pob_barangays: function () {
 
         var city_code = $(this).val();
         $('.pob_barangay').ph_locations('fetch_list', [{
@@ -115,7 +115,7 @@ var my_handlers = {
         }]);
     },
 
-    fill_pa_provinces: function() {
+    fill_pa_provinces: function () {
 
         var region_code = $(this).val();
         $('.pob_province').ph_locations('fetch_list', [{
@@ -123,7 +123,7 @@ var my_handlers = {
         }]);
     },
 
-    fill_pa_cities: function() {
+    fill_pa_cities: function () {
 
         var province_code = $(this).val();
         $('.pa_city').ph_locations('fetch_list', [{
@@ -132,7 +132,7 @@ var my_handlers = {
     },
 
 
-    fill_pa_barangays: function() {
+    fill_pa_barangays: function () {
 
         var city_code = $(this).val();
         $('.pa_barangay').ph_locations('fetch_list', [{
@@ -141,7 +141,7 @@ var my_handlers = {
     }
 };
 
-$(function() {
+$(function () {
     $('.pob_province').on('change', my_handlers.fill_pob_cities);
     $('.pob_city').on('change', my_handlers.fill_pob_barangays);
 
@@ -178,7 +178,7 @@ $(function() {
 
 // 
 
-var count = 9;
+var count = 5;
 console.log(count);
 // counter
 var counter = () => {
@@ -234,7 +234,7 @@ var counter = () => {
             $('.counter-10').addClass('!text-gray-900');
             $('.counter-10').attr('style', 'border-color: rgb(156 163 175 / var(--tw-text-opacity)) !important;');
             break;
-        
+
         case 2:
             $('.button-1').addClass('d-none');
             $('.button-1').removeClass('d-block');
@@ -801,8 +801,8 @@ var counter = () => {
 
 counter();
 
-$('.next-button').on('click', function() {
-    
+$('.next-button').on('click', function () {
+
     switch (count) {
         case 1:
             validate_step_1();
@@ -836,13 +836,13 @@ $('.next-button').on('click', function() {
     }
 });
 
-$('.prev-button').on('click', function() {
+$('.prev-button').on('click', function () {
     count--;
     counter();
 });
 
-$('.submit-button').on('click', function() {
-    if(count == 10) {
+$('.submit-button').on('click', function () {
+    if (count == 10) {
         validate_step_10();
     }
 });
@@ -879,144 +879,144 @@ var validate_step_1 = () => {
         url: "/api/v2/applicant-validator/step-1",
         data: data,
         dataType: 'json',
-        success: function(response) {
+        success: function (response) {
             console.log(data);
             console.log(response);
-            if(response.status == 400) {
-                if(typeof response.errors.surname !== 'undefined') {
-                    $.each(response.errors.surname, function(key, err_values) {
+            if (response.status == 400) {
+                if (typeof response.errors.surname !== 'undefined') {
+                    $.each(response.errors.surname, function (key, err_values) {
                         $('.pi_surname-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.firstname !== 'undefined') {
-                    $.each(response.errors.firstname, function(key, err_values) {
+                if (typeof response.errors.firstname !== 'undefined') {
+                    $.each(response.errors.firstname, function (key, err_values) {
                         $('.pi_firstname-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.middlename !== 'undefined') {
-                    $.each(response.errors.middlename, function(key, err_values) {
+                if (typeof response.errors.middlename !== 'undefined') {
+                    $.each(response.errors.middlename, function (key, err_values) {
                         $('.pi_middlename-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.suffix !== 'undefined') {
-                    $.each(response.errors.suffix, function(key, err_values) {
+                if (typeof response.errors.suffix !== 'undefined') {
+                    $.each(response.errors.suffix, function (key, err_values) {
                         $('.pi_suffix-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.birthdate !== 'undefined') {
-                    $.each(response.errors.birthdate, function(key, err_values) {
+                if (typeof response.errors.birthdate !== 'undefined') {
+                    $.each(response.errors.birthdate, function (key, err_values) {
                         $('.pi_date_of_birth-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.civil_status !== 'undefined') {
-                    $.each(response.errors.civil_status, function(key, err_values) {
+                if (typeof response.errors.civil_status !== 'undefined') {
+                    $.each(response.errors.civil_status, function (key, err_values) {
                         $('.pi_civil_status-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.height !== 'undefined') {
-                    $.each(response.errors.height, function(key, err_values) {
+                if (typeof response.errors.height !== 'undefined') {
+                    $.each(response.errors.height, function (key, err_values) {
                         $('.pi_height-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.religion !== 'undefined') {
-                    $.each(response.errors.religion, function(key, err_values) {
+                if (typeof response.errors.religion !== 'undefined') {
+                    $.each(response.errors.religion, function (key, err_values) {
                         $('.pi_religion-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.sex !== 'undefined') {
-                    $.each(response.errors.sex, function(key, err_values) {
+                if (typeof response.errors.sex !== 'undefined') {
+                    $.each(response.errors.sex, function (key, err_values) {
                         $('.pi_sex-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.is_actively_looking_for_work !== 'undefined') {
-                    $.each(response.errors.is_actively_looking_for_work, function(key, err_values) {
+                if (typeof response.errors.is_actively_looking_for_work !== 'undefined') {
+                    $.each(response.errors.is_actively_looking_for_work, function (key, err_values) {
                         $('.pi_looking_for_work-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.find_job_duration !== 'undefined') {
-                    $.each(response.errors.find_job_duration, function(key, err_values) {
+                if (typeof response.errors.find_job_duration !== 'undefined') {
+                    $.each(response.errors.find_job_duration, function (key, err_values) {
                         $('.pi_is_actively_looking_for_work-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.is_willing_to_work_immidiately !== 'undefined') {
-                    $.each(response.errors.is_willing_to_work_immidiately, function(key, err_values) {
+                if (typeof response.errors.is_willing_to_work_immidiately !== 'undefined') {
+                    $.each(response.errors.is_willing_to_work_immidiately, function (key, err_values) {
                         $('.pi_when_to_work-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.when_to_start_working !== 'undefined') {
-                    $.each(response.errors.when_to_start_working, function(key, err_values) {
+                if (typeof response.errors.when_to_start_working !== 'undefined') {
+                    $.each(response.errors.when_to_start_working, function (key, err_values) {
                         $('.pi_not_when_to_work-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.is_4Ps !== 'undefined') {
-                    $.each(response.errors.is_4Ps, function(key, err_values) {
+                if (typeof response.errors.is_4Ps !== 'undefined') {
+                    $.each(response.errors.is_4Ps, function (key, err_values) {
                         $('.pi_4ps_beneficiary-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.household_id_4ps !== 'undefined') {
-                    $.each(response.errors.household_id_4ps, function(key, err_values) {
+                if (typeof response.errors.household_id_4ps !== 'undefined') {
+                    $.each(response.errors.household_id_4ps, function (key, err_values) {
                         $('.pi_4ps_household_id-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.pob_province !== 'undefined') {
-                    $.each(response.errors.pob_province, function(key, err_values) {
+                if (typeof response.errors.pob_province !== 'undefined') {
+                    $.each(response.errors.pob_province, function (key, err_values) {
                         $('.pob_province-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.pob_city !== 'undefined') {
-                    $.each(response.errors.pob_city, function(key, err_values) {
+                if (typeof response.errors.pob_city !== 'undefined') {
+                    $.each(response.errors.pob_city, function (key, err_values) {
                         $('.pob_city-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.pob_barangay !== 'undefined') {
-                    $.each(response.errors.pob_barangay, function(key, err_values) {
+                if (typeof response.errors.pob_barangay !== 'undefined') {
+                    $.each(response.errors.pob_barangay, function (key, err_values) {
                         $('.pob_barangay-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.pop_street !== 'undefined') {
-                    $.each(response.errors.pop_street, function(key, err_values) {
+                if (typeof response.errors.pop_street !== 'undefined') {
+                    $.each(response.errors.pop_street, function (key, err_values) {
                         $('.pop_street-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.pa_province !== 'undefined') {
-                    $.each(response.errors.pa_province, function(key, err_values) {
+                if (typeof response.errors.pa_province !== 'undefined') {
+                    $.each(response.errors.pa_province, function (key, err_values) {
                         $('.pa_province-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.pa_city !== 'undefined') {
-                    $.each(response.errors.pa_city, function(key, err_values) {
+                if (typeof response.errors.pa_city !== 'undefined') {
+                    $.each(response.errors.pa_city, function (key, err_values) {
                         $('.pa_city-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.pa_barangay !== 'undefined') {
-                    $.each(response.errors.pa_barangay, function(key, err_values) {
+                if (typeof response.errors.pa_barangay !== 'undefined') {
+                    $.each(response.errors.pa_barangay, function (key, err_values) {
                         $('.pa_barangay-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.pa_street !== 'undefined') {
-                    $.each(response.errors.pa_street, function(key, err_values) {
+                if (typeof response.errors.pa_street !== 'undefined') {
+                    $.each(response.errors.pa_street, function (key, err_values) {
                         $('.pa_street-error').text(err_values);
                     });
                 }
@@ -1049,66 +1049,66 @@ var validate_step_2 = () => {
         url: "/api/v2/applicant-validator/step-2",
         data: data,
         dataType: 'json',
-        success: function(response) {
+        success: function (response) {
             console.log(data);
             console.log(response);
-            if(response.status == 400) {
-                if(typeof response.errors.email_address !== 'undefined') {
-                    $.each(response.errors.email_address, function(key, err_values) {
+            if (response.status == 400) {
+                if (typeof response.errors.email_address !== 'undefined') {
+                    $.each(response.errors.email_address, function (key, err_values) {
                         $('.pi_email_address-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.phone_number !== 'undefined') {
-                    $.each(response.errors.phone_number, function(key, err_values) {
+                if (typeof response.errors.phone_number !== 'undefined') {
+                    $.each(response.errors.phone_number, function (key, err_values) {
                         $('.pi_celphone_number-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.landline_number !== 'undefined') {
-                    $.each(response.errors.landline_number, function(key, err_values) {
+                if (typeof response.errors.landline_number !== 'undefined') {
+                    $.each(response.errors.landline_number, function (key, err_values) {
                         $('.pi_landine_number-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.GSIS_SSS_id !== 'undefined') {
-                    $.each(response.errors.GSIS_SSS_id, function(key, err_values) {
+                if (typeof response.errors.GSIS_SSS_id !== 'undefined') {
+                    $.each(response.errors.GSIS_SSS_id, function (key, err_values) {
                         $('.pi_sss_number-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.pag_ibig_number !== 'undefined') {
-                    $.each(response.errors.pag_ibig_number, function(key, err_values) {
+                if (typeof response.errors.pag_ibig_number !== 'undefined') {
+                    $.each(response.errors.pag_ibig_number, function (key, err_values) {
                         $('.pi_pag_ibig_number-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.philhealth_id !== 'undefined') {
-                    $.each(response.errors.philhealth_id, function(key, err_values) {
+                if (typeof response.errors.philhealth_id !== 'undefined') {
+                    $.each(response.errors.philhealth_id, function (key, err_values) {
                         $('.pi_philheath_number-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.disability !== 'undefined') {
-                    $.each(response.errors.disability, function(key, err_values) {
+                if (typeof response.errors.disability !== 'undefined') {
+                    $.each(response.errors.disability, function (key, err_values) {
                         $('.disability-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.employed !== 'undefined') {
-                    $.each(response.errors.employed, function(key, err_values) {
+                if (typeof response.errors.employed !== 'undefined') {
+                    $.each(response.errors.employed, function (key, err_values) {
                         $('.pi_employed-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.employed_status !== 'undefined') {
-                    $.each(response.errors.employed_status, function(key, err_values) {
+                if (typeof response.errors.employed_status !== 'undefined') {
+                    $.each(response.errors.employed_status, function (key, err_values) {
                         $('.pi_employed_status-error').text(err_values);
                     });
                 }
 
-                if(typeof response.errors.unemployed_status !== 'undefined') {
-                    $.each(response.errors.unemployed_status, function(key, err_values) {
+                if (typeof response.errors.unemployed_status !== 'undefined') {
+                    $.each(response.errors.unemployed_status, function (key, err_values) {
                         $('.pi_unemployed_status-error').text(err_values);
                     });
                 }
@@ -1122,6 +1122,23 @@ var validate_step_2 = () => {
 }
 
 var validate_step_3 = () => {
+
+    var preferred_occupation = '';
+    $('.preferred_occupation').each(function () {
+        if ($(this).val() != '')
+            preferred_occupation = 'has value';
+    });
+
+    var islocal_preferred_work_location = '';
+    $('.islocal_preferred_work_location').each(function () {
+        if ($(this).val() != '')
+            islocal_preferred_work_location = 'has value';
+    });
+    var isoverseas_preferred_work_location = '';
+    $('.isoverseas_preferred_work_location').each(function () {
+        if ($(this).val() != '')
+            isoverseas_preferred_work_location = 'has value';
+    });
     var data = {
         'occupation1': $('.preferred_occupation')[0].value,
         'occupation2': $('.preferred_occupation')[1].value,
@@ -1135,7 +1152,10 @@ var validate_step_3 = () => {
         'isoverseas_preferred_work_location3': $('.isoverseas_preferred_work_location')[2].value,
         'expected_salary': $('.expected_salary').val(),
         'passport_number': $('.passport_number').val(),
-        'date_expiration': $('.expiry_date').val(),
+        'expiry_date': $('.expiry_date').val(),
+        'preferred_occupation': preferred_occupation,
+        'islocal_preferred_work_location': islocal_preferred_work_location,
+        'isoverseas_preferred_work_location': isoverseas_preferred_work_location,
     }
 
     $.ajax({
@@ -1143,15 +1163,52 @@ var validate_step_3 = () => {
         url: "/api/v2/applicant-validator/step-3",
         data: data,
         dataType: 'json',
-        success: function(response) {
-            if(response.status == 400) {
-                // if(typeof response.errors.email_address !== 'undefined') {
-                //     $.each(response.errors.email_address, function(key, err_values) {
-                //         $('.pi_email_address-error').text(err_values);
-                //     });
-                // }
+        success: function (response) {
 
-                console.log(response);
+            $('.preferred_occupation-error').text('');
+            $('.islocal_preferred_work_location-error').text('');
+            $('.isoverseas_preferred_work_location-error').text('');
+            $('.expected_salary-error').text('');
+            $('.passport_number-error').text('');
+            $('.expiry_date-error').text('');
+
+            if (response.status == 400) {
+                if (typeof response.errors.preferred_occupation !== 'undefined') {
+                    $.each(response.errors.preferred_occupation, function (key, err_values) {
+                        $('.preferred_occupation-error').text(err_values);
+                    });
+                }
+
+                if (typeof response.errors.islocal_preferred_work_location !== 'undefined') {
+                    $.each(response.errors.islocal_preferred_work_location, function (key, err_values) {
+                        $('.islocal_preferred_work_location-error').text(err_values);
+                    });
+                }
+
+                if (typeof response.errors.isoverseas_preferred_work_location !== 'undefined') {
+                    $.each(response.errors.isoverseas_preferred_work_location, function (key, err_values) {
+                        $('.isoverseas_preferred_work_location-error').text(err_values);
+                    });
+                }
+
+                if (typeof response.errors.expected_salary !== 'undefined') {
+                    $.each(response.errors.expected_salary, function (key, err_values) {
+                        $('.expected_salary-error').text(err_values);
+                    });
+                }
+
+                if (typeof response.errors.passport_number !== 'undefined') {
+                    $.each(response.errors.passport_number, function (key, err_values) {
+                        $('.passport_number-error').text(err_values);
+                    });
+                }
+
+                if (typeof response.errors.expiry_date !== 'undefined') {
+                    $.each(response.errors.expiry_date, function (key, err_values) {
+                        $('.expiry_date-error').text(err_values);
+                    });
+                }
+
             }
             else {
                 count++;
@@ -1160,8 +1217,29 @@ var validate_step_3 = () => {
         }
     });
 }
-
+$('.is_can_read_english').on('click', function() {
+    console.log($(this).is('checked'));
+})
 var validate_step_4 = () => {
+    
+
+    var language_or_dialect_proficiency = '';
+    if ($('.is_can_read_english').val() != '' ||
+        $('.is_can_write_english').val() != '' ||
+        $('.is_can_speak_english').val() != '' ||
+        $('.is_can_understand_english').val() != '' ||
+        $('.is_can_read_filipino').val() != '' ||
+        $('.is_can_write_filipino').val() != '' ||
+        $('.is_can_speak_filipino').val() != '' ||
+        $('.is_can_understand_filipino').val() != '' ||
+        $('.is_can_read_others').val() != '' ||
+        $('.is_can_write_others').val() != '' ||
+        $('.is_can_speak_others').val() != '' ||
+        $('.is_can_understand_others').val() != '')
+    {
+        language_or_dialect_proficiency = 'has value';
+    }
+
     var data = {
         'is_can_read_english': $('.is_can_read_english').val(),
         'is_can_write_english': $('.is_can_write_english').val(),
@@ -1175,31 +1253,41 @@ var validate_step_4 = () => {
         'is_can_write_others': $('.is_can_write_others').val(),
         'is_can_speak_others': $('.is_can_speak_others').val(),
         'is_can_understand_others': $('.is_can_understand_others').val(),
+        'language_or_dialect_proficiency': language_or_dialect_proficiency
     }
 
-    $.ajax({
-        type: 'POST',
-        url: "/api/v2/applicant-validator/step-4",
-        data: data,
-        dataType: 'json',
-        success: function(response) {
-            console.log(response);
+    console.log($('.is_can_read_english'));
 
-            if(response.status == 400) {
-                // if(typeof response.errors.email_address !== 'undefined') {
-                //     $.each(response.errors.email_address, function(key, err_values) {
-                //         $('.pi_email_address-error').text(err_values);
-                //     });
-                // }
+    
 
+
+
+        $.ajax({
+            type: 'POST',
+            url: "/api/v2/applicant-validator/step-4",
+            data: data,
+            dataType: 'json',
+            success: function (response) {
                 console.log(response);
+
+                if (response.status == 400) {
+                    $('.language_or_dialect_proficiency-error').text('');
+
+                    if(typeof response.errors.language_or_dialect_proficiency !== 'undefined') {
+                        $.each(response.errors.language_or_dialect_proficiency, function(key, err_values) {
+                            $('.language_or_dialect_proficiency-error').text(err_values);
+                        });
+                    }
+
+                    console.log(response);
+                }
+                else {
+                }
             }
-            else {
-                count++;
-                counter();
-            }
-        }
-    });
+        });
+
+        count++;
+    counter();
 }
 
 var validate_step_5 = () => {
@@ -1235,10 +1323,10 @@ var validate_step_5 = () => {
         url: "/api/v2/applicant-validator/step-5",
         data: data,
         dataType: 'json',
-        success: function(response) {
+        success: function (response) {
             console.log(response);
 
-            if(response.status == 400) {
+            if (response.status == 400) {
                 // if(typeof response.errors.email_address !== 'undefined') {
                 //     $.each(response.errors.email_address, function(key, err_values) {
                 //         $('.pi_email_address-error').text(err_values);
@@ -1247,39 +1335,45 @@ var validate_step_5 = () => {
 
             }
             else {
-                count++;
-                counter();
+                // count++;
+                // counter();
             }
         }
     });
+
+    count++;
+    counter();
 }
 
 var validate_step_6 = () => {
     var data = {
-        'technical_course_1' : $('.technical_course_1').val(),
-        'technical_course_duration_start_1' : $('.technical_course_duration_start_1').val(),
-        'technical_course_duration_end_1' : $('.technical_course_duration_end_1').val(),
-        'technical_course_training_instituition_1' : $('.technical_course_training_instituition_1').val(),
-        'technical_course_certificates_recieved_1' : $('.technical_course_certificates_recieved_1').val(),
-        'technical_course_2' : $('.technical_course_2').val(),
-        'technical_course_duration_start_2' : $('.technical_course_duration_start_2').val(),
-        'technical_course_duration_end_2' : $('.technical_course_duration_end_2').val(),
-        'technical_course_training_instituition_2' : $('.technical_course_training_instituition_2').val(),
-        'technical_course_certificates_recieved_2' : $('.technical_course_certificates_recieved_2').val(),
-        'technical_course_3' : $('.technical_course_3').val(),
-        'technical_course_duration_start_3' : $('.technical_course_duration_start_3').val(),
-        'technical_course_duration_end_3' : $('.technical_course_duration_end_3').val(),
-        'technical_course_training_instituition_3' : $('.technical_course_training_instituition_3').val(),
-        'technical_course_certificates_recieved_3' : $('.technical_course_certificates_recieved_3').val(),
+        'technical_course_1': $('.technical_course_1').val(),
+        'technical_course_duration_start_1': $('.technical_course_duration_start_1').val(),
+        'technical_course_duration_end_1': $('.technical_course_duration_end_1').val(),
+        'technical_course_training_instituition_1': $('.technical_course_training_instituition_1').val(),
+        'technical_course_certificates_recieved_1': $('.technical_course_certificates_recieved_1').val(),
+        'technical_course_2': $('.technical_course_2').val(),
+        'technical_course_duration_start_2': $('.technical_course_duration_start_2').val(),
+        'technical_course_duration_end_2': $('.technical_course_duration_end_2').val(),
+        'technical_course_training_instituition_2': $('.technical_course_training_instituition_2').val(),
+        'technical_course_certificates_recieved_2': $('.technical_course_certificates_recieved_2').val(),
+        'technical_course_3': $('.technical_course_3').val(),
+        'technical_course_duration_start_3': $('.technical_course_duration_start_3').val(),
+        'technical_course_duration_end_3': $('.technical_course_duration_end_3').val(),
+        'technical_course_training_instituition_3': $('.technical_course_training_instituition_3').val(),
+        'technical_course_certificates_recieved_3': $('.technical_course_certificates_recieved_3').val(),
     }
+
+    count++;
+    counter();
 
     $.ajax({
         type: 'POST',
         url: "/api/v2/applicant-validator/step-6",
         data: data,
         dataType: 'json',
-        success: function(response) {
-            if(response.status == 400) {
+        success: function (response) {
+            if (response.status == 400) {
                 // if(typeof response.errors.email_address !== 'undefined') {
                 //     $.each(response.errors.email_address, function(key, err_values) {
                 //         $('.pi_email_address-error').text(err_values);
@@ -1289,8 +1383,8 @@ var validate_step_6 = () => {
                 console.log(response);
             }
             else {
-                count++;
-                counter();
+                // count++;
+                // counter();
             }
         }
     });
@@ -1298,16 +1392,16 @@ var validate_step_6 = () => {
 
 var validate_step_7 = () => {
     var data = {
-        'eligibility_civil_service__name_1' : $('.eligibility_civil_service__name_1').val(),
-        'eligibility_civil_service__rating_1' : $('.eligibility_civil_service__rating_1').val(),
-        'eligibility_civil_service__examination_date_1' : $('.eligibility_civil_service__examination_date_1').val(),
-        'eligibility_civil_service__name_2' : $('.eligibility_civil_service__name_2').val(),
-        'eligibility_civil_service__rating_2' : $('.eligibility_civil_service__rating_2').val(),
-        'eligibility_civil_service__examination_date_2' : $('.eligibility_civil_service__examination_date_2').val(),
-        'prc_name_1' : $('.prc_name_1').val(),
-        'prc_valid_until_1' : $('.prc_valid_until_1').val(),
-        'prc_name_2' : $('.prc_name_2').val(),
-        'prc_valid_until_2' : $('.prc_valid_until_2').val(),
+        'eligibility_civil_service__name_1': $('.eligibility_civil_service__name_1').val(),
+        'eligibility_civil_service__rating_1': $('.eligibility_civil_service__rating_1').val(),
+        'eligibility_civil_service__examination_date_1': $('.eligibility_civil_service__examination_date_1').val(),
+        'eligibility_civil_service__name_2': $('.eligibility_civil_service__name_2').val(),
+        'eligibility_civil_service__rating_2': $('.eligibility_civil_service__rating_2').val(),
+        'eligibility_civil_service__examination_date_2': $('.eligibility_civil_service__examination_date_2').val(),
+        'prc_name_1': $('.prc_name_1').val(),
+        'prc_valid_until_1': $('.prc_valid_until_1').val(),
+        'prc_name_2': $('.prc_name_2').val(),
+        'prc_valid_until_2': $('.prc_valid_until_2').val(),
     }
 
     $.ajax({
@@ -1315,8 +1409,8 @@ var validate_step_7 = () => {
         url: "/api/v2/applicant-validator/step-7",
         data: data,
         dataType: 'json',
-        success: function(response) {
-            if(response.status == 400) {
+        success: function (response) {
+            if (response.status == 400) {
                 // if(typeof response.errors.email_address !== 'undefined') {
                 //     $.each(response.errors.email_address, function(key, err_values) {
                 //         $('.pi_email_address-error').text(err_values);
@@ -1326,11 +1420,14 @@ var validate_step_7 = () => {
                 console.log(response);
             }
             else {
-                count++;
-                counter();
+                // count++;
+                // counter();
             }
         }
     });
+
+    count++;
+    counter();
 }
 
 var validate_step_8 = () => {
@@ -1367,8 +1464,8 @@ var validate_step_8 = () => {
         url: "/api/v2/applicant-validator/step-8",
         data: data,
         dataType: 'json',
-        success: function(response) {
-            if(response.status == 400) {
+        success: function (response) {
+            if (response.status == 400) {
                 // if(typeof response.errors.email_address !== 'undefined') {
                 //     $.each(response.errors.email_address, function(key, err_values) {
                 //         $('.pi_email_address-error').text(err_values);
@@ -1378,18 +1475,21 @@ var validate_step_8 = () => {
                 console.log(response);
             }
             else {
-                count++;
-                counter();
+                // count++;
+                // counter();
             }
         }
     });
+
+    count++;
+    counter();
 }
 
 var validate_step_9 = () => {
 
     var skills = '';
-    $('input[name="osawft"]:checked').each(function(index, element) {
-        skills += element.value+', ';
+    $('input[name="osawft"]:checked').each(function (index, element) {
+        skills += element.value + ', ';
     });
 
     skills += $('.osawft-others').val();
@@ -1403,8 +1503,8 @@ var validate_step_9 = () => {
         url: "/api/v2/applicant-validator/step-9",
         data: data,
         dataType: 'json',
-        success: function(response) {
-            if(response.status == 400) {
+        success: function (response) {
+            if (response.status == 400) {
                 // if(typeof response.errors.email_address !== 'undefined') {
                 //     $.each(response.errors.email_address, function(key, err_values) {
                 //         $('.pi_email_address-error').text(err_values);
@@ -1419,6 +1519,9 @@ var validate_step_9 = () => {
             }
         }
     });
+
+    count++;
+    counter();
 
 }
 

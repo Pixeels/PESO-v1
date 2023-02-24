@@ -402,7 +402,7 @@ $('.prev-button').on('click', function() {
 
 $('.submit-button').on('click', function() {
     if(count == 5) {
-        validate_step_5();
+        submit_form();
     }
 });
 
@@ -815,47 +815,111 @@ var validate_step_4 =() => {
     });
 }
 
-var validate_step_5 =() => {
+
+var submit_form = () => {
+    var vacancy_nature_of_work = $('input[name="vacancy-nature-of-work[]"]:checked');
+    var vnow = '';
+
+    vacancy_nature_of_work.each(function() {
+        vnow += $(this).val() + ', ';
+    });
+
+    var disability_type = $('input[name="qualification_accept_disability_yes[]"]:checked');
+    var disability_type_text = '';
+
+
+    disability_type.each(function() {
+        disability_type_text += $(this).val() + ', ';
+    });
+
+    disability_type_text += $('.qualification_accept_disability_yes_others').val();
+
+    var qnof = $('input[name="qnof"]:checked');
+    var qnof_text = '';
+
+
+    qnof.each(function() {
+        qnof_text += $(this).val() + ', ';
+    });
+
     var data = {
+        "establishment_name" : $('.establishment-name').val(),
+        "establishment_accronym": $('.establishment-abbr').val(),
+        "TIN_number": $('.establishment-id-number').val(),
+        "employer_type": $('input[name="employer-type"]:checked').val(),
+        "total_work_force": $('input[name="total-worked-force"]:checked').val(),
+        "line_of_bir": $('.line-of-bir').val(),
+        "address": $('.pa_address').val(),
+        "barangay": $('.pa_barangay :selected').text(),
+        "city_or_municipality": $('.pa_city :selected').text(),
+        "province": $('.pa_province :selected').text(),
+        "title": $('input[name="title"]:checked').val(),
+        "fullname": $('.contact-person').val(),
+        "position": $('.contact-person-position').val(),
+        "telephone_number": $('.contact-person-telephone').val(),
+        "mobile_number": $('.contact-person-mobile').val(),
+        "fax_number": $('.contact-person-fax').val(),
+        "email_address": $('.contact-person-email').val(),
+        "position_title": $('.vacancy-title').val(),
+        "nature_of_work": vnow,
+        "job_description": $('.vacancy-job-description').val(),
+        "place_of_work": $('.vacancy-place-of-work').val(),
+        "salary": $('.vacancy-salary').val(),
+        "vacancy_count": $('.vacancy-count').val(),
+        'work_of_experience': $('.qualification-work-experience').val(),
+        'sex': $('input[name="qualification_sex"]:checked').val(),
+        'religion': $('.qualification-religion').val(),
+        'civil_status': $('input[name="qualification_civil_status"]:checked').val(),
+        'is_accept_disability': $('input[name="qualification_accept_disability"]:checked').val(),
+        'disability_type': disability_type_text,
+        'educational_level': $('.qualification-educational-level').val(),
+        'course_or_major': $('.qualification-course').val(),
+        'license': $('.qualification-license').val(),
+        'eligibility': $('.qualification-eligibility').val(),
+        'certification': $('.qualification-certification').val(),
+        'language_or_dialect': $('.qualification-languange-spoken').val(),
+        'preferred_residence': $('.qualification-preffered-residence').val(),
+        'other_qualification': $('.other-qualification').val(),
+        'nature_of_work': qnof_text,
         'posting_date' : $('.posting-details-date').val(),
         'valid_until' : $('.posting-details-valid-until').val(),
         'e_signature' : $('#formFile').val(),
-    }
+    };
 
-    
+    console.log(data);
 
     $.ajax({
         type: 'POST',
-        url: "/api/v2/validator/step-5",
+        url: "/api/v2/employer/",
         data: data,
         dataType: 'json',
         success: function(response) {
-            $('.posting-details-date-error').text('');
-            if(response.status == 400) {
 
-                if(typeof response.errors.posting_date !== 'undefined') {
-                    $.each(response.errors.posting_date, function(key, err_values) {
-                        $('.posting-details-date-error').text(err_values);
-                    });
-                }
+            console.log(response);
+            // // $('.posting-details-date-error').text('');
+            // if(response.status == 400) {
 
-                if(typeof response.errors.valid_until !== 'undefined') {
-                    $.each(response.errors.valid_until, function(key, err_values) {
-                        $('.posting-details-valid-until-error').text(err_values);
-                    });
-                }
+            //     // if(typeof response.errors.posting_date !== 'undefined') {
+            //     //     $.each(response.errors.posting_date, function(key, err_values) {
+            //     //         $('.posting-details-date-error').text(err_values);
+            //     //     });
+            //     // }
 
-                if(typeof response.errors.e_signature !== 'undefined') {
-                    $.each(response.errors.e_signature, function(key, err_values) {
-                        $('.upload-employer-signature-error').text(err_values);
-                    });
-                }
+            //     // if(typeof response.errors.valid_until !== 'undefined') {
+            //     //     $.each(response.errors.valid_until, function(key, err_values) {
+            //     //         $('.posting-details-valid-until-error').text(err_values);
+            //     //     });
+            //     // }
 
-            }
-            else {
-                count++;
-                counter();
-            }
+            //     // if(typeof response.errors.e_signature !== 'undefined') {
+            //     //     $.each(response.errors.e_signature, function(key, err_values) {
+            //     //         $('.upload-employer-signature-error').text(err_values);
+            //     //     });
+            //     // }
+
+            // }
+            // else {
+            // }
         }
     });
 }

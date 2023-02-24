@@ -113,7 +113,6 @@ class ValidatorController extends Controller
                 'status' => 200,
             ]);
         }
-
     }
 
     function validateStep5(Request $request) {

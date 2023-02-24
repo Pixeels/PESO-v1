@@ -29,11 +29,12 @@
                         </div>
                         <div class="col-md-12 mb-4  d-flex flex-row align-items-center gap-3 ">
                             <label for="inputEmail4"
-                                class="form-label preferred_occupation !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">4</label>
+                                class="form-label  !text-xs !text-gray-600 mb-0 fw-bold text-light-emphasis">4</label>
                             <input type="input"
-                                class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
+                                class="form-control preferred_occupation !text-xs !py-2.5 !text-gray-500 border-light-emphasis">
                         </div>
                         <span class="text-danger !text-xs preferred_occupation-error">
+                            
                         </span>
                     </div>
                 </div>
@@ -83,6 +84,9 @@
                                         class="form-control !text-xs islocal_preferred_work_location !py-2.5 !text-gray-500 border-light-emphasis"
                                         disabled="disabled">
                                 </div>
+                                <span class="text-danger !text-xs islocal_preferred_work_location-error">
+                                    
+                                </span>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4">
@@ -124,6 +128,9 @@
                                         class="form-control !text-xs isoverseas_preferred_work_location !py-2.5 !text-gray-500 border-light-emphasis"
                                         disabled="disabled">
                                 </div>
+                                <span class="text-danger !text-xs isoverseas_preferred_work_location-error">
+                                    
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -136,6 +143,9 @@
                     <input type="text"
                         class="form-control expected_salary !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
                         id="inputEmail4">
+                        <span class="text-danger !text-xs expected_salary-error">
+                            
+                        </span>
                 </div>
                 {{-- Passport No.r --}}
                 <div class="col-md-4 mb-4">
@@ -145,15 +155,21 @@
                     <input type="text"
                         class="form-control passport_number !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
                         id="inputEmail4">
+                        <span class="text-danger !text-xs passport_number-error">
+                            
+                        </span>
                 </div>
                 {{-- Expiry date --}}
                 <div class="col-md-4 mb-4">
                     <label for="inputEmail4"
                         class="form-label !text-xs !text-gray-400 fw-bold text-light-emphasis">Expiry
                         date</label>
-                    <input type="text"
+                    <input type="date"
                         class="form-control expiry_date !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
                         id="inputEmail4">
+                        <span class="text-danger !text-xs expiry_date-error">
+                            
+                        </span>
                 </div>
             </div>
         </div>

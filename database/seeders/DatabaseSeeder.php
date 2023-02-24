@@ -23,20 +23,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             ApplicantSeeder::class,
-            ApplicantAddressSeeder::class,
-            ApplicantEducationalBackgroundSeeder::class,
-            ApplicantEligibilitySeeder::class,
-            ApplicantJobPreferenceSeeder::class,
-            ApplicantJobPreferenceLocationSeeder::class,
-            ApplicantLanguageSpokenSeeder::class,
-            ApplicantStatusSeeder::class,
-            ApplicantWorkExperienceSeeder::class,
             EmployerSeeder::class,
-            EmployerAddressSeeder::class,
-            EmployerEstablishmentContactDetailSeeder::class,
-            EmployerPostingDetailSeeder::class,
-            EmployerQualificationRequirementSeeder::class,
-            EmployerVacancyDetailSeeder::class
         ]);
     }
 }

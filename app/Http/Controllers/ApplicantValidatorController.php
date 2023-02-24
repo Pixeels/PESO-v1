@@ -77,18 +77,12 @@ class ApplicantValidatorController extends Controller
 
     public function validateStep3(Request $request) {
         $validator = Validator::make($request->all(), [
-            'occupation1' => 'required',
-            'occupation2' => 'required',
-            'occupation3' => 'required',
-            'occupation4' => 'required',
-            'islocal_preferred_work_location1' => 'required',
-            'islocal_preferred_work_location2' => 'required',
-            'isoverseas_preferred_work_location1' => 'required',
-            'isoverseas_preferred_work_location2' => 'required',
-            'isoverseas_preferred_work_location3' => 'required',
+            'preferred_occupation' => 'required',
+            'islocal_preferred_work_location' => 'required',
+            'isoverseas_preferred_work_location' => 'required',
             'expected_salary' => 'required',
             'passport_number' => 'required',
-            'date_expiration' => 'required',
+            'expiry_date' => 'required',
         ]);
 
         if($validator->fails()) {
@@ -106,18 +100,7 @@ class ApplicantValidatorController extends Controller
 
     public function validateStep4(Request $request) {
         $validator = Validator::make($request->all(), [
-            'is_can_read_english' => 'required',
-            'is_can_write_english' => 'required',
-            'is_can_speak_english' => 'required',
-            'is_can_understand_english' => 'required',
-            'is_can_read_filipino' => 'required',
-            'is_can_write_filipino' => 'required',
-            'is_can_speak_filipino' => 'required',
-            'is_can_understand_filipino' => 'required',
-            'is_can_read_others' => 'required',
-            'is_can_write_others' => 'required',
-            'is_can_speak_others' => 'required',
-            'is_can_understand_others' => 'required',
+            'language_or_dialect_proficiency' => 'required'
         ]);
 
         if($validator->fails()) {

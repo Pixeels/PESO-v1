@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApplicantsController;
 use App\Http\Controllers\ValidatorController;
 use App\Http\Controllers\ApplicantValidatorController;
+use App\Http\Controllers\EmployerController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -43,4 +44,6 @@ Route::prefix('v2')->group(function() {
         Route::post('/step-9', [ApplicantValidatorController::class, 'validateStep9']);
         Route::post('/step-10', [ApplicantValidatorController::class, 'validateStep10']);
     });
+
+    Route::resource('/employer', EmployerController::class);
 });

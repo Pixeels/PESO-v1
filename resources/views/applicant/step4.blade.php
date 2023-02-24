@@ -33,6 +33,7 @@
                     <input type="input" value="English"
                         class="form-control !text-xs !py-2.5 !text-gray-500 border-light-emphasis"
                         disabled='disabled'>
+                        
                 </div>
                 <div class="col-md-8">
                     <div class="row">
@@ -103,6 +104,8 @@
                     <input type="input"
                         class="form-control !text-xs  !py-2.5 !text-gray-500 border-light-emphasis"
                         placeholder="Others: ">
+                        <span class="text-danger !text-xs language_or_dialect_proficiency-error">
+                        </span>
                 </div>
                 <div class="col-md-8">
                     <div class="row">
