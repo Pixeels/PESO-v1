@@ -16,10 +16,7 @@ class EmployerEstablishmentContactDetail extends Model
 
     protected $fillable = [
         "title",
-        "surname",
-        "firstname",
-        "lastname",
-        "suffix",
+        "fullname",
         "position",
         "telephone_number",
         "mobile_number",

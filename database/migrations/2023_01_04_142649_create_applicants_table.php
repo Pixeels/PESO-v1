@@ -22,11 +22,14 @@ return new class extends Migration
             $table->date('birthdate');
             $table->string('civil_status');
             $table->string('height');
+            $table->string('religion');
+            $table->string('sex');
             $table->string('email_address');
             $table->string('landline_number');
             $table->string('phone_number');
             $table->string('disability');
             $table->string('TIN_number');
+            $table->string('pag_ibig_number');
             $table->string('GSIS_SSS_id');
             $table->string('philhealth_id');
             $table->integer('is_actively_looking_for_work');

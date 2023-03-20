@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('position_title');
             $table->string('nature_of_work');
+            $table->string('job_description');
             $table->string('place_of_work');
             $table->string('salary');
             $table->string('vacancy_count');

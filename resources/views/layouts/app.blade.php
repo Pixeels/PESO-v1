@@ -8,11 +8,11 @@
     <title>PESO EMIS</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-    {{-- @vite('resources/css/app.css') --}}
+    @vite('resources/css/app.css')
 
     <!-- Favicons -->
-    <link href="{{ 'img\homepage\peso_icon.png' }}" rel="icon">
-    <link href="{{ 'img\homepage\apple-touch-icon.png' }}" rel="apple-touch-icon">
+    <link href="{{ asset('img\homepage\peso_icon.png') }}" rel="icon">
+    <link href="{{ asset('img\homepage\apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -20,17 +20,18 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{ 'vendor\homevendor\animate.min.css' }}" rel="stylesheet">
-    <link href="{{ 'vendor\homevendor\aos\aos.css' }}" rel="stylesheet">
-    <link href="{{ 'vendor\homevendor\bootstrap\css\bootstrap.min.css' }}" rel="stylesheet">
-    <link href="{{ 'vendor\homevendor\bootstrap-icons\bootstrap-icons.css' }}" rel="stylesheet">
-    <link href="{{ 'vendor\homevendor\boxicons\css\boxicons.min.css' }}" rel="stylesheet">
-    <link href="{{ 'vendor\homevendor\glightbox\css\glightbox.min.css' }}" rel="stylesheet">
-    <link href="{{ 'vendor\homevendor\remixicon\remixicon.css' }}" rel="stylesheet">
-    <link href="{{ 'vendor\homevendor\swiper\swiper-bundle.min.css' }}" rel="stylesheet">
+    <link href="{{ asset('vendor\homevendor\animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor\homevendor\aos\aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor\homevendor\bootstrap\css\bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor\homevendor\bootstrap-icons\bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor\homevendor\boxicons\css\boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor\homevendor\glightbox\css\glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor\homevendor\remixicon\remixicon.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor\homevendor\swiper\swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="{{ 'css\homepage.css' }}" rel="stylesheet">
+    <link href="{{ asset('css\homepage.css') }}" rel="stylesheet">
+    <link href="{{ asset('css\style.css') }}" rel="stylesheet">
 
 
 </head>
@@ -110,15 +111,15 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="{{ 'vendor\homevendor\aos\aos.js' }}"></script>
-    <script src="{{ 'vendor\homevendor\bootstrap\js\bootstrap.bundle.min.js' }}"></script>
-    <script src="{{ 'vendor\homevendor\glightbox\js\glightbox.min.js' }}"></script>
-    <script src="{{ 'vendor\homevendor\isotope-layout\isotope.pkgd.min.js' }}"></script>
-    <script src="{{ 'vendor\homevendorphp-email-form\validate.js' }}"></script>
-    <script src="{{ 'vendor\homevendor\swiper\swiper-bundle.min.js' }}"></script>
+    <script src="{{ asset('vendor\homevendor\aos\aos.js') }}"></script>
+    <script src="{{ asset('vendor\homevendor\bootstrap\js\bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('vendor\homevendor\glightbox\js\glightbox.min.js') }}"></script>
+    <script src="{{ asset('vendor\homevendor\isotope-layout\isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('vendor\homevendorphp-email-form\validate.js') }}"></script>
+    <script src="{{ asset('vendor\homevendor\swiper\swiper-bundle.min.js') }}"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{ 'js\homepage.js' }}"></script>
+    <script src="{{ asset('js\homepage.js') }}"></script>
 
 </body>
 
